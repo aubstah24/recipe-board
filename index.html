@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Da Morning Grind | Recipe Book</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand-mark">DMG</div>
+    <div>
+      <p class="eyebrow">DA MORNING GRIND CAFE</p>
+      <h1>Drink Recipe Book</h1>
+      <p class="subtitle">Your recipes, organized and ready for the bar.</p>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="recipe-browser" aria-label="Drink recipes">
+      <div class="browser-heading">
+        <div>
+          <p class="eyebrow">THE MENU</p>
+          <h2>Find a drink</h2>
+        </div>
+        <label class="search-wrap">
+          <span class="sr-only">Search drinks</span>
+          <input id="searchInput" type="search" placeholder="Search recipes…" autocomplete="off" />
+        </label>
+      </div>
+      <nav id="categoryNav" class="category-nav" aria-label="Recipe categories"></nav>
+      <div id="recipeSections" class="recipe-sections"></div>
+    </section>
+
+    <aside id="recipePanel" class="recipe-panel empty-state" aria-live="polite">
+      <div class="empty-icon">✳</div>
+      <p class="eyebrow">RECIPE DETAILS</p>
+      <h2>Choose a drink</h2>
+      <p>Select any drink bubble to see its ingredients and preparation steps.</p>
+    </aside>
+  </main>
+
+  <footer>
+    <span>DA MORNING GRIND CAFE</span>
+    <span>Internal recipe reference</span>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
