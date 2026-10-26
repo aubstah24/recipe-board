@@ -4,6 +4,9 @@
   Ingredient quantities are stored per size so the recipe panel changes when a size is selected.
 */
 const recipes = [
+
+/* MATCHA DRINKS */
+
   // MATCHA LATTE
   {
     id: "classic-matcha", name: "Matcha Latte", category: "Matcha", icon: "抹",
@@ -18,7 +21,7 @@ const recipes = [
     },
       "16oz": {
         Hot: [
-         {name: "Honey Syrup", amount: "2 pump"}, { name: "Matcha Powder", amount: "6g" }, {name: "Hot Kettle Water", amount: "70mL"}, { name: "Milk", amount: "10oz" }
+         {name: "Honey Syrup", amount: "4 pump"}, { name: "Matcha Powder", amount: "6g" }, {name: "Hot Kettle Water", amount: "70mL"}, { name: "Milk", amount: "10oz" }
         ],
         Iced:[
           {name: "Honey Syrup", amount: "4 pump"}, { name: "Batch Matcha", amount: "70mL" }, { name: "Milk", amount: "150mL" }, { name: "Ice", amount: "As needed" }
@@ -40,6 +43,45 @@ const recipes = [
     },
     note: "You can mix the drink for online orders so it is ready at pickup time. For iced drinks, reduce milk volume by 20mL if the drink has a topping to avoid overflow."
   },
+
+
+// HOJICHA LATTE
+  {
+    id: "classic-hojicha", name: "Hojicha Latte", category: "Matcha", icon: "抹",
+    description: "A smooth hojicha latte with your choice of milk.", temperatures: ["Hot", "Iced"],
+    prepTime: "2–3 min", method: "Layered / Hot or Iced",
+    sizes: {
+      "12oz": {
+        Hot: [
+          { name: "Hojicha Powder", amount: "3g" }, {name: "Hot Kettle Water", amount: "50mL"}, { name: "Milk", amount: "9oz" }
+        ],
+       "Iced": [{name: "Honey Syrup", amount: "2 pump"}, { name: "Hojicha Powder", amount: "3g" }, {name: "Hot Kettle Water", amount: "50mL"}, { name: "Milk", amount: "120mL" },{ name: "Ice", amount: "As needed" }]
+    },
+      "16oz": {
+        Hot: [
+        { name: "Hojicha Powder", amount: "4g" }, , {name: "Hot Kettle Water", amount: "70mL"}, { name: "Milk", amount: "10oz" }
+        ],
+        Iced:[
+          {name: "Honey Syrup", amount: "4 pump"}, { name: "Hojicha Powder", amount: "4g" }, {name: "Hot Kettle Water", amount: "70mL"}, { name: "Milk", amount: "150mL" }, { name: "Ice", amount: "As needed" }
+        ]
+      },
+      "20oz": {
+        Iced: [
+          { name: "Hojicha Powder", amount: "6g" }, {name: "Hot Kettle Water", amount: "90mL"}, { name: "Milk", amount: "200mL" }, { name: "Ice", amount: "As needed" }
+        ]
+      }
+    },
+    preparation: {
+      Hot: [
+        "Pump syrup into the cup if requested", "Whisk hojicha with hot water until smooth then pour over the syrup in the cup", "Steam milk, wipe the steam wand well, and purge wand", "Circle the milk pitcher then pour into the cup leaving 1/4 inch space from the top"
+      ],
+      Iced: [
+        "Pump syrup into the cup if requested", "Pour in the milk and stir",  "Whisk hojicha with hot water until smooth", "Fill cup with ice", "Pour hojicha over the ice for layered effect"
+      ]    
+    },
+    note: "You can mix the drink for online orders so it is ready at pickup time. For iced drinks, reduce milk volume by 20mL if the drink has a topping to avoid overflow."
+  },
+
 
 // DIRTY MATCHA LATTE
     {
@@ -76,46 +118,120 @@ const recipes = [
       ]    
     },
   },
+
+// STRAWBERRY MATCHA LATTE
   {
     id: "strawberry-matcha", name: "Strawberry Matcha Latte", category: "Matcha", icon: "🍓",
     description: "Layered strawberry and matcha with creamy milk.",
     prepTime: "3 min", method: "Layered / iced",
     sizes: {
-      "12oz": [{ name: "Strawberry puree", amount: "1.5 oz" }, { name: "Milk", amount: "7 oz" }, { name: "Matcha mixture", amount: "2.5 oz" }, { name: "Ice", amount: "As needed" }],
-      "16oz": [{ name: "Strawberry puree", amount: "2 oz" }, { name: "Milk", amount: "9.5 oz" }, { name: "Matcha mixture", amount: "3 oz" }, { name: "Ice", amount: "As needed" }],
-      "20oz": [{ name: "Strawberry puree", amount: "2.5 oz" }, { name: "Milk", amount: "12 oz" }, { name: "Matcha mixture", amount: "3.5 oz" }, { name: "Ice", amount: "As needed" }]
+      "12oz": [{ name: "Strawberry puree", amount: "20mL" }, { name: "Milk", amount: "120mL" }, { name: "Matcha mixture", amount: "50mL" }, { name: "Ice", amount: "Full cup" }],
+      "16oz": [{ name: "Strawberry puree", amount: "25mL" }, { name: "Milk", amount: "150mL" }, { name: "Matcha mixture", amount: "70mL" }, { name: "Ice", amount: "As needed" }],
+      "20oz": [{ name: "Strawberry puree", amount: "30mL" }, { name: "Milk", amount: "200mL" }, { name: "Matcha mixture", amount: "90mL" }, { name: "Ice", amount: "Full cup" }]
     },
-    steps: ["Add strawberry puree to the cup.", "Fill the cup with ice.", "Pour in milk.", "Slowly top with prepared matcha to create layers."],
+    steps: [ "Fill the cup with ice.", "Add strawberry puree to the cup.","Pour in milk.", "Slowly top with prepared matcha to create layers."],
     note: "Iced goes first to keep the strawberry puree from sinking"
   },
+
+
+// UBE MATCHA LATTE
   {
-    id: "vanilla-latte", name: "Vanilla Latte", category: "Espresso Lattes", icon: "☕",
-    description: "Espresso, vanilla sweetness, and silky milk.", temperatures: ["Hot", "Iced"],
-    prepTime: "2–3 min", method: "Espresso / hot or iced",
+    id: "ube-matcha", name: "Ube Matcha Latte", category: "Matcha", icon: "抹",
+    description: "A smooth matcha latte with ube milk.", temperatures: ["Hot", "Iced"],
+    prepTime: "2–3 min", method: "Layered / Hot or Iced",
     sizes: {
       "12oz": {
         Hot: [
-          { name: "Vanilla syrup", amount: "2 pumps" },
-          { name: "Espresso", amount: "2 shots" },
-          { name: "Whole milk", amount: "9oz" }
+          {name: "Vanilla Syrup", amount: "2 pumps"}, { name: "Matcha Powder", amount: "4g" }, {name: "Hot Kettle Water", amount: "50mL"}, {name: "Ube", amount: "1 Full Dropper"}, { name: "Milk", amount: "9oz" }
         ],
-        Iced: [
-          { name: "Vanilla syrup", amount: "2 pumps" }, { name: "Espresso", amount: "2 shots" }, { name: "Milk", amount: "120mL"},  {name: "Ice", amount: "Fill with ice"}
-      ]
+       "Iced": [{name: "Vanilla Syrup", amount: "2 pumps"}, { name: "Milk", amount: "120mL" },{name: "Ube", amount: "1 Full Dropper"}, { name: "Ice", amount: "As needed" }, { name: "Batch Matcha", amount: "50mL" }]
     },
       "16oz": {
         Hot: [
-          { name: "Vanilla syrup", amount: "4 pumps" },
-          { name: "Espresso", amount: "2 shots" },
-          { name: "Whole milk", amount: "9oz" }
+         {name: "Vanilla Syrup", amount: "3 pumps"}, { name: "Matcha Powder", amount: "6g" }, {name: "Hot Kettle Water", amount: "70mL"}, {name: "Ube", amount: "1 Full Dropper"},{ name: "Milk", amount: "10oz" }
         ],
         Iced:[
-          { name: "Vanilla syrup", amount: "4 pumps" }, { name: "Espresso", amount: "2 shots" }, { name: "Milk", amount: "150mL" },  {name: "Ice", amount: "Fill with ice"}
+          {name: "Vanilla Syrup", amount: "3 pumps"}, { name: "Milk", amount: "150mL" }, { name: "Ice", amount: "As needed" }, {name: "Ube", amount: "1 Full Dropper"}, { name: "Batch Matcha", amount: "70mL" }
         ]
       },
       "20oz": {
         Iced: [
-          { name: "Vanilla syrup", amount: "5 pumps" }, { name: "Espresso", amount: "4 shots" }, { name: "Milk", amount: "200/250mL (Use lower volume if drink has a topping)"}, {name: "Ice", amount: "Fill with ice"}
+          {name: "Vanilla Syrup", amount: "4 pumps"}, { name: "Milk", amount: "200mL" }, {name: "Ube", amount: "1 Full Dropper"}, { name: "Ice", amount: "As needed" }, { name: "Batch Matcha", amount: "90mL" }
+        ]
+      }
+    },
+    preparation: {
+      Hot: [
+        "Pump syrup into the cup", "Whisk matcha with hot water until smooth then pour over the syrup in the cup", "Squeeze 1 full dropper of ube and mix into the matcha", "Steam milk, wipe the steam wand well, and purge wand", "Circle the milk pitcher then pour into the cup leaving 1/4 inch space from the top"
+      ],
+      Iced: [
+        "Pump syrup into the cup", "Pour in the milk", "Squeeze 1 full dropper of ube and mix into the milk and mix well", "Fill with ice leaving space for the matcha layer", "Squeeze batch matcha over the ice for layered effect"
+      ]    
+    },
+    note: "For iced drinks, reduce milk volume by 20mL if the drink has a topping to avoid overflow."
+  },
+
+
+// SAGO MATCHA LATTE
+  {
+    id: "sago-matcha", name: "Sago Matcha Latte", category: "Matcha", icon: "🍓",
+    description: "Layered matcha latte with sago pearls and a cloud of your flavor choice.",
+    prepTime: "3 min", method: "Layered / iced",
+    sizes: {
+      "12oz": [],
+      "16oz": [{ name: "Sago pearls", amount: "1 flat ice cream scoop" }, {name: "Sago Choice", amount: "1 pump syrup" }, { name: "Ice", amount: "As needed" }, { name: "Milk", amount: "100mL" }, { name: "Batch Matcha", amount: "50mL" }, {name: "Cloud Topping", amount: "2-3oz"}],
+      "20oz": [{ name: "Sago pearls", amount: "1.5 flat ice cream scoops" }, { name: "Milk", amount: "12 oz" }, { name: "Matcha mixture", amount: "3.5 oz" }, { name: "Ice", amount: "As needed" }]
+    },
+    steps: ["Add sago pearls to the cup with 1 pump of flavor chosen and mix with the spoon to combine and gently separate the sago so it doesn't stick together.", "Fill the cup with ice.", "Pour in milk.", "Slowly top with prepared matcha to create layers."],
+    note: "For the sago matcha, you will add 10/15mL of puree over the ice.  Iced goes first to keep the sago pearls from sinking.  You want to gently stir the sago pearls with the syrup to coat them."
+  },
+
+  // NANA MATCHA LATTE
+
+   {
+    id: "matcha-nana", name: "Da Matcha-Nana Latte", category: "Matcha", icon: "🍌",
+    description: "Matcha latte topped with a banana brown sugar pudding cloud.", temperatures: ["Iced"],
+    prepTime: "1-2 min", method: "Layered / iced",
+    sizes: {
+      "12oz": [{name: "Honey Syrup", amount: "1 pump"}, { name: "Batch Matcha", amount: "50mL" }, { name: "Milk", amount: "120mL" }, { name: "Nana Custard", amount: "2.5 floz" }, { name: "Ice", amount: "Fill with 1 inch space" }],
+      "16oz": [{name: "Honey Syrup", amount: "2 pumps"},{ name: "Batch Matcha", amount: "70mL" }, { name: "Milk", amount: "150mL" }, { name: "Nana Custard", amount: "3 floz" }, { name: "Ice", amount: "Fill with 1 inch space" }],
+      "20oz": [{name: "Honey Syrup", amount: "3 pumps"},{ name: "Batch Matcha", amount: "90mL" }, { name: "Milk", amount: "200mL" }, { name: "Nana Custard", amount: "4 floz" }, { name: "Ice", amount: "Fill with 1 inch space" }]
+    },
+    steps: ["Add the syrup, matcha, and milk to the cup then stir well", "Scoop in ice leaving space at the top", "Top with Nana Custard."],
+    note: "For Less sweet or No added sweetener, omit the honey syrup."
+  },
+  
+/* ESPRESSO LATTE DRINKS */
+
+  // REGULAR LATTE
+  {
+    id: "latte", name: "Latte", category: "Espresso Lattes", icon: "☕",
+    description: "Espresso, add a sweetener, and silky milk.", temperatures: ["Hot", "Iced"],
+    prepTime: "1-2 min", method: "Espresso / hot or iced",
+    sizes: {
+      "12oz": {
+        Hot: [
+          { name: "Syrup", amount: "Standard 2 pumps (Follow # on ticket)" },
+          { name: "Espresso", amount: "2 shots" },
+          { name: "Whole milk", amount: "9oz" }
+        ],
+        Iced: [
+          { name: "Syrup", amount: "Standard 2 pumps (Follow # on ticket)" }, { name: "Espresso", amount: "2 shots" }, { name: "Milk", amount: "120mL"},  {name: "Ice", amount: "Fill with ice"}
+      ]
+    },
+      "16oz": {
+        Hot: [
+          { name: "Syrup", amount: "Standard 4 pumps (Follow # on ticket)" },
+          { name: "Espresso", amount: "2 shots" },
+          { name: "Whole milk", amount: "10oz" }
+        ],
+        Iced:[
+          { name: "Syrup", amount: "Standard 4 pumps (Follow # on ticket)" }, { name: "Espresso", amount: "2 shots" }, { name: "Milk", amount: "150mL" },  {name: "Ice", amount: "Fill with ice"}
+        ]
+      },
+      "20oz": {
+        Iced: [
+          { name: "Syrup", amount: "Standard 5 pumps (Follow # on ticket)" }, { name: "Espresso", amount: "4 shots" }, { name: "Milk", amount: "200/250mL (Use lower volume if drink has a topping)"}, {name: "Ice", amount: "Fill with ice"}
         ]
       }
     },
@@ -130,6 +246,9 @@ const recipes = [
     note: "For iced drinks, use the lower milk volume if the drink has a topping to avoid overflow."
 
   },
+
+
+  // MOCHA LATTE
   {
     id: "mocha-latte", name: "Mocha Latte", category: "Espresso Lattes", icon: "🍫",
     description: "Espresso and chocolate balanced with milk.", temperatures: ["Hot", "Iced"],
@@ -149,7 +268,7 @@ const recipes = [
         Hot: [
           { name: "Hollander Chocolate syrup", amount: "1.5 pumps" },
           { name: "Espresso", amount: "2 shots" },
-          { name: "Whole milk", amount: "9oz" }
+          { name: "Whole milk", amount: "10oz" }
         ],
         Iced:[
           { name: "Hollander Chocolate syrup", amount: "1.5 pumps" }, { name: "Espresso", amount: "2 shots" }, { name: "Milk", amount: "150mL" },  {name: "Ice", amount: "Fill with ice"}
@@ -172,6 +291,8 @@ const recipes = [
     note: "For iced drinks, use the lower milk volume if the drink has a topping to avoid overflow."
 
   },
+
+  // WHITE MOCHA LATTE
   {
     id: "white-mocha-latte", name: "White Mocha Latte", category: "Espresso Lattes", icon: "🍫",
     description: "Espresso and white chocolate balanced with milk.", temperatures: ["Hot", "Iced"],
@@ -191,7 +312,7 @@ const recipes = [
         Hot: [
           { name: "Hollander White Chocolate syrup", amount: "1.5 pumps" },
           { name: "Espresso", amount: "2 shots" },
-          { name: "Whole milk", amount: "9oz" }
+          { name: "Whole milk", amount: "10oz" }
         ],
         Iced:[
           { name: "Hollander White Chocolate syrup", amount: "1.5 pumps" }, { name: "Espresso", amount: "2 shots" }, { name: "Milk", amount: "150mL" },  {name: "Ice", amount: "Fill with ice"}
@@ -214,6 +335,104 @@ const recipes = [
     note: "For iced drinks, use the lower milk volume if the drink has a topping to avoid overflow."
 
   },
+
+
+
+  // THAI LATTE
+  {
+    id: "thai-latte", name: "Thai Latte", category: "Espresso Lattes", icon: "🍫",
+    description: "Espresso and condensed milk balanced with evaporated milk.", temperatures: ["Hot", "Iced"],
+    prepTime: "2–3 min", method: "Espresso / hot or iced",
+   sizes: {
+      "12oz": {
+        Hot: [
+          { name: "Condensed Mixture (Mix)", amount: "40mL" },
+          { name: "Espresso", amount: "2 shots" },
+          { name: "Whole milk", amount: "9oz" }
+        ],
+        Iced: [
+          { name: "Condensed Mixture (Mix)", amount: "40mL" }, { name: "Espresso", amount: "2 shots" }, { name: "Milk", amount: "100mL"},  {name: "Ice", amount: "Fill with ice"}
+      ]
+    },
+      "16oz": {
+        Hot: [
+          { name: "Condensed Mixture (Mix)", amount: "60mL" },
+          { name: "Espresso", amount: "2 shots" },
+          { name: "Whole milk", amount: "10oz" }
+        ],
+        Iced:[
+          { name: "Condensed Mixture (Mix)", amount: "60mL" }, { name: "Espresso", amount: "2 shots" }, { name: "Milk", amount: "130mL" },  {name: "Ice", amount: "Fill with ice"}
+        ]
+      },
+      "20oz": {
+        Iced: [
+          { name: "Condensed Mixture (Mix)", amount: "90mL" }, { name: "Espresso", amount: "4 shots" }, { name: "Milk", amount: "180mL (200mL for drinks with a topping)"}, {name: "Ice", amount: "Fill with ice"}
+        ]
+      }
+    },
+    preparation: {
+      Hot: [
+        "Squeeze condensed mixture into the cup", "Pull espresso shots and empty over the syrup into the cup", "Stir until incorporated", "Steam milk, wipe the steam wand well, and purge wand", "Circle the milk pitcher then pour into the cup leaving 1/4 inch space from the top"
+      ],
+      Iced: [
+        "Squeeze condensed mixture into the cup", "Pull espresso shots and empty over the syrup", "Stir until incorporated", "Pour in the milk and stir again", "Fill with ice"
+      ]    
+    },
+    note: "For iced drinks, use the lower milk volume if the drink has a topping to avoid overflow."
+
+  },
+
+
+  //  UBE LATTE
+  {
+    id: "ube-latte", name: "Ube Latte", category: "Espresso Lattes", icon: "🍫",
+    description: "Espresso and ube with milk.", temperatures: ["Hot", "Iced"],
+    prepTime: "2–3 min", method: "Espresso / hot or iced",
+   sizes: {
+      "12oz": {
+        Hot: [
+          { name: "Vanilla syrup", amount: "2 pumps" },
+          { name: "Ube", amount: "Full Dropper" },
+          { name: "Espresso", amount: "2 shots" },
+          { name: "Whole milk", amount: "9oz" }
+        ],
+        Iced: [
+          { name: "Vanilla syrup", amount: "2 pumps" }, { name: "Ube", amount: "Full Dropper" }, { name: "Espresso", amount: "2 shots" }, { name: "Milk", amount: "120mL"},  {name: "Ice", amount: "Fill with ice"}
+      ]
+    },
+      "16oz": {
+        Hot: [
+          { name: "Vanilla syrup", amount: "3 pumps" },
+          { name: "Ube", amount: "Full Dropper" },
+          { name: "Espresso", amount: "2 shots" },
+          { name: "Whole milk", amount: "9oz" }
+        ],
+        Iced:[
+          { name: "Vanilla syrup", amount: "3 pumps" }, { name: "Ube", amount: "Full Dropper" }, { name: "Espresso", amount: "2 shots" }, { name: "Milk", amount: "150mL" },  {name: "Ice", amount: "Fill with ice"}
+        ]
+      },
+      "20oz": {
+        Iced: [
+          { name: "Vanilla syrup", amount: "4 pumps" }, { name: "Ube", amount: "Full Dropper" }, { name: "Espresso", amount: "4 shots" }, { name: "Milk", amount: "250mL (200mL for drinks with a topping)"}, {name: "Ice", amount: "Fill with ice"}
+        ]
+      }
+    },
+    preparation: {
+      Hot: [
+        "Pump syrup into the cup", "Pull espresso shots and empty over the syrup into the cup", "Add in the ube dropper", "Swirl to incorporate the syrup", "Steam milk, wipe the steam wand well, and purge wand", "Circle the milk pitcher then pour into the cup leaving 1/4 inch space from the top"
+      ],
+      Iced: [
+        "Pump syrup into the cup", "Pour in the milk", "Add in the ube dropper", "Stir to incorporate the ube", "Fill with ice", "Pull espresso shots and empty over ice to create a layered effect"
+      ]    
+    },
+    note: "For iced drinks, use the lower milk volume if the drink has a topping to avoid overflow."
+
+  },
+
+/* CUSTARD LATTE DRINKS */
+
+
+  // BIG ISLAND VOG LATTE
   {
     id: "big-island-vog", name: "Da Big Island Vog Latte", category: "Custard Lattes", icon: "🌋",
     description: "A London Fog latte topped with a matcha pudding cloud.", temperatures: ["Iced"],
@@ -225,8 +444,10 @@ const recipes = [
     },
     steps: ["Add Earl Grey syrup to the cup.", ".Pour in milk and stir", "Fill with ice leaving 1-inch from the top", "Prepare the matcha pudding cloud using the cafe's topping procedure.", "Pour the custard over the drink and serve."],
   },
+
+  /* MATCHA-NANA LATTE */
   {
-    id: "matcha-nana", name: "Da Matcha-Nana Latte", category: "Custard Lattes", icon: "🍌",
+    id: "matcha-nana-custard", name: "Da Matcha-Nana Latte", category: "Custard Lattes", icon: "🍌",
     description: "Matcha latte topped with a banana brown sugar pudding cloud.", temperatures: ["Iced"],
     prepTime: "1-2 min", method: "Layered / iced",
     sizes: {
@@ -237,6 +458,8 @@ const recipes = [
     steps: ["Add the syrup, matcha, and milk to the cup then stir well", "Scoop in ice leaving space at the top", "Top with Nana Custard."],
     note: "For Less sweet or No added sweetener, omit the honey syrup."
   },
+
+  // DA NANA LATTE
   {
     id: "da-nana", name: "Da Nana Latte", category: "Custard Lattes", icon: "🍌",
     description: "Espresso latte topped with a banana brown sugar custard", temperatures: ["Iced"],
@@ -248,6 +471,10 @@ const recipes = [
     },
     steps: ["Add the syrup, matcha, and milk to the cup then stir well", "Scoop in ice leaving space at the top", "Top with Nana Custard."],
   },
+
+/* DIRTY SODA */
+
+  //DIY DIRTY SODA
   {
     id: "dirty-soda", name: "DIY Dirty Soda", category: "Dirty Sodas", icon: "🥤",
     description: "Large cup only with choice soda with flavors of their choice",
@@ -259,7 +486,71 @@ const recipes = [
     },
     steps: ["Pump syrup into 20oz cup", "Fill halfway with ice", "Slowly pour in soda", "Add in 3 pumps of creamer", "Gently stir and serve"],
     note: "Skip creamer if label says 'No creamer' on it."
-  }
+  },
+
+
+  // Sweetheart Dirty Soda
+  {
+    id: "sweetheart-dirty-soda", name: "Sweetheart Dirty Soda", category: "Dirty Sodas", icon: "🥤",
+    description: "Large cup only with choice soda with flavors of their choice",
+    prepTime: "1–2 min", method: "Built / iced",
+    sizes: {
+      "12oz": [],
+      "16oz": [],
+      "20oz": [{ name: "Sweetheart Dirty Soda", amount: "20 oz" }, { name: "Strawberry Syrup", amount: "5 pumps" }, { name: "Ice", amount: "Halfway, then top off" }, { name: "Creamer", amount: "3 pumps" }]
+    },
+    steps: ["Pump syrup into 20oz cup", "Fill halfway with ice", "Slowly pour in soda", "Add in 3 pumps of creamer", "Gently stir and serve"],
+    note: "Skip creamer if label says 'No creamer' on it."
+  },
+
+
+  // POG Dirty Soda
+    {
+    id: "POG-dirty-soda", name: "POG Dirty Soda", category: "Dirty Sodas", icon: "🥤",
+    description: "Large cup only with choice soda with flavors of their choice",
+    prepTime: "1–2 min", method: "Built / iced",
+    sizes: {
+      "12oz": [],
+      "16oz": [],
+      "20oz": [{ name: "POG Dirty Soda", amount: "20 oz" }, { name: "Harder's Passion Fruit Guava Syrup", amount: "5 pumps" }, { name: "Ice", amount: "Halfway, then top off" }, { name: "Creamer", amount: "3 pumps" }]
+    },
+    steps: ["Pump syrup into 20oz cup", "Fill halfway with ice", "Slowly pour in soda", "Add in 3 pumps of creamer", "Gently stir and serve"],
+    note: "Skip creamer if label says 'No creamer' on it."
+  },
+
+
+  // Experiment626 Dirty Soda
+  {
+    id: "Experiment626-dirty-soda", name: "Experiment626 Dirty Soda", category: "Dirty Sodas", icon: "🥤",
+    description: "Large cup only with choice soda with flavors of their choice",
+    prepTime: "1–2 min", method: "Built / iced",
+    sizes: {
+      "12oz": [],
+      "16oz": [],
+      "20oz": [{ name: "Experiment626 Dirty Soda", amount: "20 oz" }, { name: "Vanilla Syrup", amount: "1 pump" }, { name: "Blue Cotton Candy Syrup", amount: "4 pumps" }, { name: "Ice", amount: "Halfway, then top off" }, { name: "Creamer", amount: "3 pumps" }]
+    },
+    steps: ["Pump syrup into 20oz cup", "Fill halfway with ice", "Slowly pour in soda", "Add in 3 pumps of creamer", "Gently stir and serve"],
+    note: "Skip creamer if label says 'No creamer' on it."
+  },
+
+
+  // Heihei Dirty Soda
+
+   {
+    id: "Heihei-dirty-soda", name: "Heihei Dirty Soda", category: "Dirty Sodas", icon: "🥤",
+    description: "Large cup only with choice soda with flavors of their choice",
+    prepTime: "1–2 min", method: "Built / iced",
+    sizes: {
+      "12oz": [],
+      "16oz": [],
+      "20oz": [{ name: "Heihei Dirty Soda", amount: "20 oz" }, { name: "Passion Fruit Syrup", amount: "2 pump" }, { name: "Mango Syrup", amount: "3 pumps" }, { name: "Ice", amount: "Halfway, then top off" }, { name: "Creamer", amount: "3 pumps" }]
+    },
+    steps: ["Pump syrup into 20oz cup", "Fill halfway with ice", "Slowly pour in soda", "Add in 3 pumps of creamer", "Gently stir and serve"],
+    note: "Skip creamer if label says 'No creamer' on it."
+  },
+
+
+
  ];
 
 
