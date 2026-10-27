@@ -231,7 +231,7 @@ const recipes = [
       },
       "20oz": {
         Iced: [
-          { name: "Syrup", amount: "Standard 5 pumps (Follow # on ticket)" }, { name: "Espresso", amount: "4 shots" }, { name: "Milk", amount: "200/250mL (Use lower volume if drink has a topping)"}, {name: "Ice", amount: "Fill with ice"}
+          { name: "Syrup", amount: "Standard 5 pumps (Follow # on ticket)" }, { name: "Espresso", amount: "4 shots" }, { name: "Milk", amount: "230mL (200mL for drinks with a topping)"}, {name: "Ice", amount: "Fill with ice"}
         ]
       }
     },
@@ -276,7 +276,7 @@ const recipes = [
       },
       "20oz": {
         Iced: [
-          { name: "Hollander Chocolate syrup", amount: "2 pumps" }, { name: "Espresso", amount: "4 shots" }, { name: "Milk", amount: "250mL (200mL for drinks with a topping)"}, {name: "Ice", amount: "Fill with ice"}
+          { name: "Hollander Chocolate syrup", amount: "2 pumps" }, { name: "Espresso", amount: "4 shots" }, { name: "Milk", amount: "230mL (200mL for drinks with a topping)"}, {name: "Ice", amount: "Fill with ice"}
         ]
       }
     },
@@ -320,7 +320,7 @@ const recipes = [
       },
       "20oz": {
         Iced: [
-          { name: "Hollander White Chocolate syrup", amount: "2 pumps" }, { name: "Espresso", amount: "4 shots" }, { name: "Milk", amount: "250mL (200mL for drinks with a topping)"}, {name: "Ice", amount: "Fill with ice"}
+          { name: "Hollander White Chocolate syrup", amount: "2 pumps" }, { name: "Espresso", amount: "4 shots" }, { name: "Milk", amount: "230mL (200mL for drinks with a topping)"}, {name: "Ice", amount: "Fill with ice"}
         ]
       }
     },
@@ -338,9 +338,106 @@ const recipes = [
 
 
 
+  // HAWAIIAN LATTE
+   {
+    id: "hawaiian-latte", name: "Hawaiian Latte", category: "Espresso Lattes", icon: "☕",
+    description: "Espresso latte with coconut and mac nut syrup.", temperatures: ["Hot", "Iced"],
+    prepTime: "2–3 min", method: "Espresso / hot or iced",
+   sizes: {
+      "12oz": {
+        Hot: [
+          { name: "Coconut Syrup", amount: "1 pump" },
+          { name: "Mac Nut Syrup", amount: "2 pumps" },
+          { name: "Espresso", amount: "2 shots" },
+          { name: "Whole milk", amount: "9oz" }
+        ],
+        Iced: [
+          { name: "Coconut Syrup", amount: "1 pump" }, { name: "Mac Nut Syrup", amount: "2 pumps" }, { name: "Espresso", amount: "2 shots" }, { name: "Milk", amount: "120mL"},  {name: "Ice", amount: "Fill with ice"}
+      ]
+    },
+      "16oz": {
+        Hot: [
+          { name: "Coconut Syrup", amount: "1 pump" },
+          { name: "Mac Nut Syrup", amount: "3 pumps" },
+          { name: "Espresso", amount: "2 shots" },
+          { name: "Whole milk", amount: "10oz" }
+        ],
+        Iced:[
+          { name: "Coconut Syrup", amount: "1 pump" }, { name: "Mac Nut Syrup", amount: "3 pumps" }, { name: "Espresso", amount: "2 shots" }, { name: "Milk", amount: "150mL" },  {name: "Ice", amount: "Fill with ice"}
+        ]
+      },
+      "20oz": {
+        Iced: [
+          { name: "Coconut Syrup", amount: "2 pumps" }, { name: "Mac Nut Syrup", amount: "4 pumps" }, { name: "Espresso", amount: "4 shots" }, { name: "Milk", amount: "230mL (200mL for drinks with a topping)"}, {name: "Ice", amount: "Fill with ice"}
+        ]
+      }
+    },
+    preparation: {
+      Hot: [
+        "Squeeze condensed mixture into the cup", "Pull espresso shots and empty over the syrup into the cup", "Stir until incorporated", "Steam milk, wipe the steam wand well, and purge wand", "Circle the milk pitcher then pour into the cup leaving 1/4 inch space from the top"
+      ],
+      Iced: [
+        "Squeeze condensed mixture into the cup", "Pull espresso shots and empty over the syrup", "Stir until incorporated", "Pour in the milk and stir again", "Fill with ice"
+      ]    
+    },
+    note: "For iced drinks, use the lower milk volume if the drink has a topping to avoid overflow."
+
+  },
+
+
+  
+
+  // VANILLA MALT LATTE
+   {
+    id: "vanilla-malt-latte", name: "Vanilla Malt Latte", category: "Espresso Lattes", icon: "☕",
+    description: "Espresso latte with vanilla and malt.", temperatures: ["Hot", "Iced"],
+    prepTime: "2–3 min", method: "Espresso / hot or iced",
+   sizes: {
+      "12oz": {
+        Hot: [
+          { name: "Vanilla Syrup", amount: "2 pumps" },
+          { name: "Malt Powder", amount: "1 scoop" },
+          { name: "Espresso", amount: "2 shots" },
+          { name: "Whole milk", amount: "9oz" }
+        ],
+        Iced: [
+          { name: "Vanilla Syrup", amount: "2 pumps" }, { name: "Malt Powder", amount: "1 scoop" }, { name: "Espresso", amount: "2 shots" }, { name: "Milk", amount: "100mL"},  {name: "Ice", amount: "Fill with ice"}
+      ]
+    },
+      "16oz": {
+        Hot: [
+          { name: "Vanilla Syrup", amount: "3 pumps" },
+          { name: "Malt Powder", amount: "2 scoops" },
+          { name: "Espresso", amount: "2 shots" },
+          { name: "Whole milk", amount: "10oz" }
+        ],
+        Iced:[
+          { name: "Vanilla Syrup", amount: "3 pumps" }, { name: "Malt Powder", amount: "2 scoops" }, { name: "Espresso", amount: "2 shots" }, { name: "Milk", amount: "130mL" },  {name: "Ice", amount: "Fill with ice"}
+        ]
+      },
+      "20oz": {
+        Iced: [
+          { name: "Vanilla Syrup", amount: "4 pumps" }, { name: "Malt Powder", amount: "3 scoops" }, { name: "Espresso", amount: "4 shots" }, { name: "Milk", amount: "230mL (200mL for drinks with a topping)"}, {name: "Ice", amount: "Fill with ice"}
+        ]
+      }
+    },
+    preparation: {
+      Hot: [
+        "Squeeze condensed mixture into the cup", "Pull espresso shots and empty over the syrup into the cup", "Stir until incorporated", "Steam milk, wipe the steam wand well, and purge wand", "Circle the milk pitcher then pour into the cup leaving 1/4 inch space from the top"
+      ],
+      Iced: [
+        "Squeeze condensed mixture into the cup", "Pull espresso shots and empty over the syrup", "Stir until incorporated", "Pour in the milk and stir again", "Fill with ice"
+      ]    
+    },
+    note: "For iced drinks, use the lower milk volume if the drink has a topping to avoid overflow."
+
+  },
+
+
+
   // THAI LATTE
   {
-    id: "thai-latte", name: "Thai Latte", category: "Espresso Lattes", icon: "🍫",
+    id: "thai-latte", name: "Thai Latte", category: "Espresso Lattes", icon: "☕",
     description: "Espresso and condensed milk balanced with evaporated milk.", temperatures: ["Hot", "Iced"],
     prepTime: "2–3 min", method: "Espresso / hot or iced",
    sizes: {
@@ -385,7 +482,7 @@ const recipes = [
 
   //  UBE LATTE
   {
-    id: "ube-latte", name: "Ube Latte", category: "Espresso Lattes", icon: "🍫",
+    id: "ube-latte", name: "Ube Latte", category: "Espresso Lattes", icon: "☕",
     description: "Espresso and ube with milk.", temperatures: ["Hot", "Iced"],
     prepTime: "2–3 min", method: "Espresso / hot or iced",
    sizes: {
@@ -429,13 +526,33 @@ const recipes = [
 
   },
 
+
+  // Black Honey Cold Brew Latte
+  {
+    id: "blk-honey-coldbrew-latte", name: "Black Honey Cold Brew Latte", category: "Espresso Lattes", icon: "☕",
+    description: "Cold brew and condensed milk sweetened with kuromitsu.", temperatures: ["Iced"],
+    prepTime: "1-2 min", method: "Espresso / Iced",
+   sizes: {
+      "12oz": [
+          { name: "Honey Syrup", amount: "1 pump" }, {name: "Black Sugar Syrup", amount: "15mL" }, { name: "Condensed Mixture (Mix)", amount: "15mL" }, { name: "Cold Brew", amount: "150mL" }, { name: "Milk", amount: "40mL"},  {name: "Ice", amount: "Fill with ice"}
+      ],
+      "16oz": [
+          { name: "Honey Syrup", amount: "2 pumps" }, { name: "Black Sugar Syrup", amount: "20mL" }, { name: "Condensed Mixture (Mix)", amount: "60mL" }, { name: "Cold Brew", amount: "200mL" }, { name: "Milk", amount: "60mL" },  {name: "Ice", amount: "Fill with ice"}
+        ],
+      "20oz": [ 
+          { name: "Honey Syrup", amount: "3 pumps" }, { name: "Black Sugar Syrup", amount: "25mL" }, { name: "Condensed Mixture (Mix)", amount: "90mL" }, { name: "Cold Brew", amount: "250mL" }, { name: "Milk", amount: "80mL"}, {name: "Ice", amount: "Fill with ice"}
+        ]
+    },
+   steps: ["Combine all the ingredients in the cup and stir well", "Fill with ice and serve."],
+  },
+
 /* CUSTARD LATTE DRINKS */
 
 
   // BIG ISLAND VOG LATTE
   {
     id: "big-island-vog", name: "Da Big Island Vog Latte", category: "Custard Lattes", icon: "🌋",
-    description: "A London Fog latte topped with a matcha pudding cloud.", temperatures: ["Iced"],
+    description: "A London Fog latte topped with a matcha custard.", temperatures: ["Iced"],
     prepTime: "1-2 min", method: "Layered / iced",
     sizes: {
       "12oz": [{ name: "Earl Grey", amount: "30mL" }, { name: "Milk", amount: "120mL" }, { name: "Matcha Custard", amount: "see paper instructions on Top Fridge" }, { name: "Ice", amount: "Fill with 1/2 inch space" }],
@@ -448,7 +565,7 @@ const recipes = [
   /* MATCHA-NANA LATTE */
   {
     id: "matcha-nana-custard", name: "Da Matcha-Nana Latte", category: "Custard Lattes", icon: "🍌",
-    description: "Matcha latte topped with a banana brown sugar pudding cloud.", temperatures: ["Iced"],
+    description: "Matcha latte topped with a banana brown sugar custard.", temperatures: ["Iced"],
     prepTime: "1-2 min", method: "Layered / iced",
     sizes: {
       "12oz": [{name: "Honey Syrup", amount: "1 pump"}, { name: "Batch Matcha", amount: "50mL" }, { name: "Milk", amount: "120mL" }, { name: "Nana Custard", amount: "2.5 floz" }, { name: "Ice", amount: "Fill with 1 inch space" }],
@@ -469,8 +586,117 @@ const recipes = [
       "16oz": [{ name: "Espresso", amount: "2 shots" }, { name: "Milk", amount: "150mL" }, { name: "Nana Custard", amount: "3 floz" }, { name: "Ice", amount: "Fill with 1 inch space" }],
       "20oz": [{ name: "Espresso", amount: "4 shots" }, { name: "Milk", amount: "200mL" }, { name: "Nana Custard", amount: "4 floz" }, { name: "Ice", amount: "Fill with 1 inch space" }]
     },
-    steps: ["Add the syrup, matcha, and milk to the cup then stir well", "Scoop in ice leaving space at the top", "Top with Nana Custard."],
+    steps: ["Add the syrup, espresso, and milk to the cup then stir well", "Scoop in ice leaving space at the top", "Top with Nana Custard."],
   },
+
+
+   // Salted Caramel Latte 
+  {
+    id: "salted-caramel", name: "Salted Caramel Latte", category: "Custard Lattes", icon: "🍌",
+    description: "Espresso latte topped with a salted caramel custard", temperatures: ["Iced"],
+    prepTime: "2-3 min", method: "Layered / iced",
+    sizes: {
+      "12oz": [{ name: "Espresso", amount: "2 shots" }, { name: "Milk", amount: "120mL" }, { name: "Custard", amount: "1.7 floz" }, {name: "Torani Caramel Sauce", amount: "20mL (0.7 floz)"}, { name: "Ice", amount: "Fill with 1 inch space" }],
+      "16oz": [{ name: "Espresso", amount: "2 shots" }, { name: "Milk", amount: "150mL" }, { name: "Custard", amount: "2 floz" }, {name: "Torani Caramel Sauce", amount: "30mL (1.0 floz)"},{ name: "Ice", amount: "Fill with 1 inch space" }],
+      "20oz": [{ name: "Espresso", amount: "4 shots" }, { name: "Milk", amount: "200mL" }, { name: "Custard", amount: "3 floz" }, {name: "Torani Caramel Sauce", amount: "40mL (1.3 floz)"},{ name: "Ice", amount: "Fill with 1 inch space" }]
+    },
+    steps: ["Add the syrup, espresso, and milk to the cup then stir well", "Scoop in ice leaving space at the top", "Top with Custard."],
+  },
+
+
+     // Salted Maple Latte 
+  {
+    id: "salted-maple", name: "Salted Maple Latte", category: "Custard Lattes", icon: "☕",
+    description: "Espresso latte topped with a salted maple custard", temperatures: ["Iced"],
+    prepTime: "2-3 min", method: "Layered / iced",
+    sizes: {
+      "12oz": [{ name: "Espresso", amount: "2 shots" }, { name: "Milk", amount: "120mL" }, { name: "Custard", amount: "1.7 floz" }, {name: "Maple Syrup", amount: "20mL (0.7 floz)"}, { name: "Ice", amount: "Fill with 1 inch space" }],
+      "16oz": [{ name: "Espresso", amount: "2 shots" }, { name: "Milk", amount: "150mL" }, { name: "Custard", amount: "2 floz" }, {name: "Maple Syrup", amount: "30mL (1.0 floz)"},{ name: "Ice", amount: "Fill with 1 inch space" }],
+      "20oz": [{ name: "Espresso", amount: "4 shots" }, { name: "Milk", amount: "200mL" }, { name: "Custard", amount: "3 floz" }, {name: "Maple Syrup", amount: "40mL (1.3 floz)"},{ name: "Ice", amount: "Fill with 1 inch space" }]
+    },
+    steps: ["Add the syrup, espresso, and milk to the cup then stir well", "Scoop in ice leaving space at the top", "Top with Custard."],
+  },
+
+
+/* COFFEE DRINKS */
+
+// Black Honey Cold Brew Latte
+  {
+    id: "blk-honey-coldbrew-latte", name: "Black Honey Cold Brew Latte", category: "Regular Coffee", icon: "☕",
+    description: "Cold brew and condensed milk sweetened with kuromitsu.", temperatures: ["Iced"],
+    prepTime: "1-2 min", method: "Espresso / Iced",
+   sizes: {
+      "12oz": [
+          { name: "Honey Syrup", amount: "1 pump" }, {name: "Black Sugar Syrup", amount: "15mL" }, { name: "Condensed Mixture (Mix)", amount: "15mL" }, { name: "Cold Brew", amount: "150mL" }, { name: "Milk", amount: "40mL"},  {name: "Ice", amount: "Fill with ice"}
+      ],
+      "16oz": [
+          { name: "Honey Syrup", amount: "2 pumps" }, { name: "Black Sugar Syrup", amount: "20mL" }, { name: "Condensed Mixture (Mix)", amount: "60mL" }, { name: "Cold Brew", amount: "200mL" }, { name: "Milk", amount: "60mL" },  {name: "Ice", amount: "Fill with ice"}
+        ],
+      "20oz": [ 
+          { name: "Honey Syrup", amount: "3 pumps" }, { name: "Black Sugar Syrup", amount: "25mL" }, { name: "Condensed Mixture (Mix)", amount: "90mL" }, { name: "Cold Brew", amount: "250mL" }, { name: "Milk", amount: "80mL"}, {name: "Ice", amount: "Fill with ice"}
+        ]
+    },
+   steps: ["Combine all the ingredients in the cup and stir well", "Fill with ice and serve."],
+  },
+
+  // Brewed Coffee
+  {
+    id: "brew-coffee", name: "Brewed Coffee", category: "Regular Coffee", icon: "☕",
+    description: "A simple cup of freshly brewed coffee.", temperatures: ["Hot"],
+    prepTime: "1-2 min", method: "Brewed",
+    sizes: {},
+   steps: ["Firehouse Coffee Beans", "2 pulses in the coffee grinder", "Ensure setting is on half batch button", "Press Brew A and wait until time is completed finished", "Dispense in a cup."],
+  },
+
+
+// Cold Brew
+  {
+    id: "cold-brew", name: "Cold Brew", category: "Regular Coffee", icon: "☕",
+    description: "A simple cup of cold brew coffee.", temperatures: ["Iced"],
+    prepTime: "1-2 min", method: "Steeped",
+    sizes: {},
+   steps: ["Fill cup with cold brew up to the top of logo", "Fill with ice and serve."],
+  },
+
+
+  // Iced Coffee
+  {
+    id: "iced-coffee", name: "Iced Coffee", category: "Regular Coffee", icon: "☕",
+    description: "A simple cup of iced brewed coffee.", temperatures: ["Iced"],
+    prepTime: "1-2 min", method: "Brewed",
+    sizes: {},
+   steps: ["Fill a clean milk pitcher with hot brewed coffee", "Fill half of a shallow bowl with ice and water then place the milk pitcher in it", "Ensure the coffee reached closer to lukewarm temperature", "Pour the coffee into a cup filled with ice and serve."],
+  },
+
+  // Americano
+  {
+    id: "americano", name: "Americano", category: "Regular Coffee", icon: "☕",
+    description: "A simple cup of freshly brewed coffee.", temperatures: ["Hot", "Iced"],
+    prepTime: "1-2 min", method: "Espresso / hot or iced",
+    sizes: { 
+      
+      "12oz": {
+        "Hot": [{ name: "Espresso", amount: "2 shots"},  { name: "Kettle RO Water", amount: "Fill with 1/4 inch space" }],
+        "Iced": [{ name: "RO Water", amount: "Half way of cup" }, { name: "Espresso", amount: "2 shots"},  {name: "Ice", amount: "Fill with ice"}]
+    },
+      "16oz": {
+          "Hot": [{ name: "Espresso", amount: "2 shots"},  { name: "Kettle RO Water", amount: "Fill with 1/4 inch space" }],
+        "Iced": [{ name: "RO Water", amount: "Half way of cup" }, { name: "Espresso", amount: "2 shots"},  {name: "Ice", amount: "Fill with ice"}
+        ]},  
+      "20oz": {
+          "Hot": [],
+        "Iced": [
+         { name: "RO Water", amount: "Half way of cup" }, { name: "Espresso", amount: "4 shots"},  {name: "Ice", amount: "Fill with ice"}
+        ]}},
+   preparation: {
+      Hot:["Heat RO water in the kettle to 170 degrees Farenheit", "Pour in espresso shots", "Pour in water up to 1/4 inch from the top", "Fill cup half way with water"],
+      Iced: ["Fill cup half way with water", "Pour in espresso shots", "Fill with ice and serve."],
+   }
+  },
+
+
+
+
 
 /* DIRTY SODA */
 
