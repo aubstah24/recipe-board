@@ -696,6 +696,84 @@ const recipes = [
 
 
 
+/* TEAS & LEMONADES */
+
+
+// HOT TEA
+{
+    id: "hot-tea", name: "Hot Tea", category: "Teas/Lemonade", icon: "🍵",
+    description: "A simple cup of hot tea.", temperatures: ["Hot"],
+    prepTime: "1-2 min", method: "Steeped",
+    sizes: {
+      "12oz": {
+        Hot: [
+          { name: "Tea Bag", amount: "2 tea bags of their choice" },
+          { name: "RO Kettle Water", amount: "Fill cup with hot water" }
+        ],
+        Iced: [
+         
+      ]
+    },
+      "16oz": {
+        Hot: [
+          { name: "Syrup", amount: "2 bags of their choice" },
+          { name: "Espresso", amount: "2 shots" },
+          { name: "Whole milk", amount: "10oz" }
+        ],
+        Iced:[
+         
+        ]
+      }
+    },
+    preparation: {
+      Hot: [
+       "Heat up RO water in the kettle to 170 degrees Farenheit", "Put the tea bags in the cup and steep for 1-2 minutes", "Remove one tea bag and serve."
+      ]  
+    },
+
+  },
+
+
+  // Iced Tea
+  {
+    id: "iced-tea", name: "Iced Tea", category: "Teas/Lemonade", icon: "🍋" ,
+    description: "A simple cup of iced tea.", temperatures: ["Iced"],
+    prepTime: "1-2 min", method: "Built / iced",
+    sizes: {
+      "12oz": [{name: "Syrup Flavor", amount: "2 pumps"}, { name: "Black/Green Tea", amount: "Fill to the top of logo" }, {name: "Ice", amount: "Fill with ice"}],
+      "16oz": [{name: "Syrup Flavor", amount: "3 pumps"}, { name: "Black/Green Tea", amount: "Fill to the top of logo" }, {name: "Ice", amount: "Fill with ice"}],
+      "20oz": [{name: "Syrup Flavor", amount: "4 pumps"}, { name: "Black/Green Tea", amount: "Fill to the top of logo" }, {name: "Ice", amount: "Fill with ice"}]
+    },
+    steps: ["If syrup is used, pump it into the cup", "Pour in black/green tea into the cup and stir if syrup was added", "Fill with ice and serve."],
+  },
+  
+
+// Tea Lemonade
+  {
+    id: "tea-lemonade", name: "Tea Lemonade", category: "Teas/Lemonade", icon: "🍋" ,
+    description: "A simple cup of lemonade.", temperatures: ["Iced"],
+    prepTime: "1-2 min", method: "Built / iced",
+    sizes: {
+      "12oz": [{name: "Syrup Flavor", amount: "2 pumps"}, { name: "Lemonade", amount: "100mL" }, { name: "Black/Green Tea", amount: "100mL" },{name: "Ice", amount: "Fill with ice"}],
+      "16oz": [{name: "Syrup Flavor", amount: "3 pumps"}, { name: "Lemonade", amount: "120mL" }, { name: "Black/Green Tea", amount: "120mL" },{name: "Ice", amount: "Fill with ice"}],
+      "20oz": [{name: "Syrup Flavor", amount: "4 pumps"}, { name: "Lemonade", amount: "150mL" }, { name: "Black/Green Tea", amount: "150mL" },{name: "Ice", amount: "Fill with ice"}]
+    },
+    steps: ["If syrup is used, pump it into the cup", "Pour in the tea and lemonade into the cup and stir if syrup was added", "Fill with ice and serve."],
+  },
+
+  // Lemonade
+  {
+    id: "lemonade", name: "Lemonade", category: "Teas/Lemonade", icon: "🍋" ,
+    description: "A simple cup of lemonade.", temperatures: ["Iced"],
+    prepTime: "1-2 min", method: "Built / iced",
+    sizes: {
+      "12oz": [{name: "Syrup Flavor", amount: "2 pumps"}, { name: "Lemonade", amount: "Fill to the top of logo" }, {name: "Ice", amount: "Fill with ice"}],
+      "16oz": [{name: "Syrup Flavor", amount: "3 pumps"}, { name: "Lemonade", amount: "Fill to the top of logo" }, {name: "Ice", amount: "Fill with ice"}],
+      "20oz": [{name: "Syrup Flavor", amount: "4 pumps"}, { name: "Lemonade", amount: "Fill to the top of logo" }, {name: "Ice", amount: "Fill with ice"}]
+    },
+    steps: ["If syrup is used, pump it into the cup", "Pour in lemonade into the cup and stir if syrup was added", "Fill with ice and serve."],
+  },
+
 
 
 /* DIRTY SODA */
@@ -777,6 +855,56 @@ const recipes = [
 
 
 
+/* KEIKI MENU */
+
+
+
+  // Pink Milk
+  {
+    id: "Pink-Milk", name: "Pink Milk", category: "Keiki", icon: "�",
+    description: "A delightful blend of strawberry and milk",
+    prepTime: "1–2 min", method: "Built / iced",
+    sizes: {
+      "12oz": [{ name: "Strawberry Dropper", amount: "2 Full droppers" }, { name: "Pink Dropper", amount: "1 Full dropper" }, { name: "Milk", amount: "3/4 way" }, { name: "Ice", amount: "Fill with ice" }],
+    },
+    steps: ["Stir together all the ingredients until well combined", "Fill with ice and serve."],
+  },
+
+
+ // Blue Milk
+  {
+    id: "Blue-Milk", name: "Blue Milk", category: "Keiki", icon: "",
+    description: "A delightful blend of blue and strawberry flavored milk",
+    prepTime: "1–2 min", method: "Built / iced",
+    sizes: {
+      "12oz": [{ name: "Strawberry Dropper", amount: "2 Full droppers" }, { name: "Blue Dropper", amount: "1 Full dropper" }, { name: "Milk", amount: "3/4 way" }, { name: "Ice", amount: "Fill with ice" }],
+    },
+    steps: ["Stir together all the ingredients until well combined", "Fill with ice and serve."],
+  },
+
+
+   // Chocolate Milk
+  {
+    id: "Chocolate-Milk", name: "Chocolate Milk", category: "Keiki", icon: "",
+    description: "A delightful blend of chocolate and milk",
+    prepTime: "1–2 min", method: "Built / iced",
+    sizes: {
+      "12oz": [{ name: "Hersheys Chocolate Syrup", amount: "15mL" }, { name: "Milk", amount: "3/4 way" }, { name: "Ice", amount: "Fill with ice" }],
+    },
+    steps: ["Pour in 1/4 cup of milk first then add the chocolate syrup", "Froth to ensure it's well combined", "Fill with the rest of milk to 3/4 of cup", "Fill with ice and serve."],
+  },
+
+
+  // Hot Chocolate Milk
+  {
+    id: "Hot-Chocolate-Milk", name: "Hot Chocolate Milk", category: "Keiki", icon: "",
+    description: "A delightful blend of chocolate and milk",
+    prepTime: "1–2 min", method: "Built / Hot",
+    sizes: {
+      "12oz": [{ name: "Hersheys Chocolate Syrup", amount: "15mL" }, { name: "Milk", amount: "8oz" }],
+    },
+    steps: ["Put the chocolate syrup into the cup", "Steam whole milk to kids temperature", "Pour the steamed milk into the cup and stir well", "Serve."],
+  }
  ];
 
 
@@ -799,7 +927,7 @@ recipes.forEach(recipe => {
   }
 });
 
-const categories = ["All", "Matcha", "Espresso Lattes", "Custard Lattes", "Regular Coffee", "Teas/Lemonade", "Dirty Sodas"];
+const categories = ["All", "Monthly Specials", "Matcha", "Espresso Lattes", "Custard Lattes", "Regular Coffee", "Teas/Lemonade", "Dirty Sodas", "Keiki"];
 let activeCategory = "All";
 let activeRecipeId = null;
 let activeSize = "16oz";
