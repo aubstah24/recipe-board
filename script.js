@@ -15,21 +15,21 @@ const recipes = [
     sizes: {
       "12oz": {
         Hot: [
-          {name: "Honey Syrup", amount: "2 pump"}, { name: "Matcha Powder", amount: "4g" }, {name: "Hot Kettle Water", amount: "50mL"}, { name: "Milk", amount: "9oz" }
+          {name: "Simple Syrup", amount: "2 pumps"}, { name: "Matcha Powder", amount: "4g" }, {name: "Hot Kettle Water", amount: "50mL"}, { name: "Milk", amount: "9oz" }
         ],
-       "Iced": [{name: "Honey Syrup", amount: "2 pump"}, { name: "Batch Matcha", amount: "50mL" }, { name: "Milk", amount: "120mL" },{ name: "Ice", amount: "As needed" }]
+       "Iced": [{ name: "Batch Matcha", amount: "50mL" }, { name: "Milk", amount: "120mL" },{ name: "Ice", amount: "As needed" }]
     },
       "16oz": {
         Hot: [
-         {name: "Honey Syrup", amount: "4 pump"}, { name: "Matcha Powder", amount: "6g" }, {name: "Hot Kettle Water", amount: "70mL"}, { name: "Milk", amount: "10oz" }
+         {name: "Simple Syrup", amount: "2 pumps"}, { name: "Matcha Powder", amount: "6g" }, {name: "Hot Kettle Water", amount: "70mL"}, { name: "Milk", amount: "10oz" }
         ],
         Iced:[
-          {name: "Honey Syrup", amount: "4 pump"}, { name: "Batch Matcha", amount: "70mL" }, { name: "Milk", amount: "150mL" }, { name: "Ice", amount: "As needed" }
+          { name: "Batch Matcha", amount: "70mL" }, { name: "Milk", amount: "170mL" }, { name: "Ice", amount: "As needed" }
         ]
       },
       "20oz": {
         Iced: [
-          {name: "Honey Syrup", amount: "5 pump"}, { name: "Batch Matcha", amount: "90mL" }, { name: "Milk", amount: "200mL" }, { name: "Ice", amount: "As needed" }
+          { name: "Batch Matcha", amount: "90mL" }, { name: "Milk", amount: "200mL" }, { name: "Ice", amount: "As needed" }
         ]
       }
     },
@@ -38,7 +38,7 @@ const recipes = [
         "Pump syrup into the cup", "Whisk matcha with hot water until smooth then pour over the syrup in the cup", "Steam milk, wipe the steam wand well, and purge wand", "Circle the milk pitcher then pour into the cup leaving 1/4 inch space from the top"
       ],
       Iced: [
-        "Pump syrup into the cup", "Pour in the milk and stir", "Fill with ice", "Squeeze batch matcha over the ice for layered effect"
+        "Pour in the milk", "Fill with ice", "Squeeze batch matcha over the ice for layered effect"
       ]    
     },
     note: "You can mix the drink for online orders so it is ready at pickup time. For iced drinks, reduce milk volume by 20mL if the drink has a topping to avoid overflow."
@@ -53,21 +53,21 @@ const recipes = [
     sizes: {
       "12oz": {
         Hot: [
-          { name: "Hojicha Powder", amount: "3g" }, {name: "Hot Kettle Water", amount: "50mL"}, { name: "Milk", amount: "9oz" }
+          {name: "Simple Syrup", amount: "2 pumps"}, { name: "Hojicha Powder", amount: "3g" }, {name: "Hot Kettle Water", amount: "50mL"}, { name: "Milk", amount: "9oz" }
         ],
-       "Iced": [{name: "Honey Syrup", amount: "2 pump"}, { name: "Hojicha Powder", amount: "3g" }, {name: "Hot Kettle Water", amount: "50mL"}, { name: "Milk", amount: "120mL" },{ name: "Ice", amount: "As needed" }]
+       "Iced": [{name: "Simple Syrup", amount: "1 pump"}, { name: "Hojicha Powder", amount: "3g" }, {name: "Hot Kettle Water", amount: "50mL"}, { name: "Milk", amount: "120mL" },{ name: "Ice", amount: "As needed" }]
     },
       "16oz": {
         Hot: [
-        { name: "Hojicha Powder", amount: "4g" }, , {name: "Hot Kettle Water", amount: "70mL"}, { name: "Milk", amount: "10oz" }
+        { name: "Hojicha Powder", amount: "4g" }, {name: "Hot Kettle Water", amount: "70mL"}, {name: "Simple Syrup", amount: "2 pumps"}, { name: "Milk", amount: "10oz" }
         ],
         Iced:[
-          {name: "Honey Syrup", amount: "4 pump"}, { name: "Hojicha Powder", amount: "4g" }, {name: "Hot Kettle Water", amount: "70mL"}, { name: "Milk", amount: "150mL" }, { name: "Ice", amount: "As needed" }
+          {name: "Simple Syrup", amount: "2 pumps"}, { name: "Hojicha Powder", amount: "4g" }, {name: "Hot Kettle Water", amount: "70mL"}, { name: "Milk", amount: "170mL" }, { name: "Ice", amount: "As needed" }
         ]
       },
       "20oz": {
         Iced: [
-          { name: "Hojicha Powder", amount: "6g" }, {name: "Hot Kettle Water", amount: "90mL"}, { name: "Milk", amount: "200mL" }, { name: "Ice", amount: "As needed" }
+          { name: "Hojicha Powder", amount: "6g" }, {name: "Simple Syrup", amount: "2 pumps"}, {name: "Hot Kettle Water", amount: "90mL"}, { name: "Milk", amount: "200mL" }, { name: "Ice", amount: "As needed" }
         ]
       }
     },
@@ -76,7 +76,7 @@ const recipes = [
         "Pump syrup into the cup if requested", "Whisk hojicha with hot water until smooth then pour over the syrup in the cup", "Steam milk, wipe the steam wand well, and purge wand", "Circle the milk pitcher then pour into the cup leaving 1/4 inch space from the top"
       ],
       Iced: [
-        "Pump syrup into the cup if requested", "Pour in the milk and stir",  "Whisk hojicha with hot water until smooth", "Fill cup with ice", "Pour hojicha over the ice for layered effect"
+        "Pour in the milk",  "Whisk hojicha with hot water until smooth then add in the simple syrup", "Fill cup with ice", "Pour hojicha over the ice for layered effect"
       ]    
     },
     note: "You can mix the drink for online orders so it is ready at pickup time. For iced drinks, reduce milk volume by 20mL if the drink has a topping to avoid overflow."
@@ -91,30 +91,30 @@ const recipes = [
     sizes: {
       "12oz": {
         Hot: [
-          {name: "Honey Syrup", amount: "2 pump"}, { name: "Espresso", amount: "2 shots" }, { name: "Matcha Powder", amount: "3g" }, {name: "Hot Kettle Water", amount: "40mL"}, { name: "Milk", amount: "9oz" }
+          {name: "Simple Syrup", amount: "2 pumps"}, { name: "Espresso", amount: "2 shots" }, { name: "Matcha Powder", amount: "3g" }, {name: "Hot Kettle Water", amount: "40mL"}, { name: "Milk", amount: "9oz" }
         ],
-       "Iced": [{name: "Honey Syrup", amount: "2 pump"}, { name: "Espresso", amount: "2 shots" }, { name: "Milk", amount: "130mL" },{ name: "Ice", amount: "As needed" }, { name: "Batch Matcha", amount: "40mL" }]
+       "Iced": [{name: "Simple Syrup", amount: "2 pumps"}, { name: "Espresso", amount: "2 shots" }, { name: "Milk", amount: "130mL" },{ name: "Ice", amount: "As needed" }, { name: "Batch Matcha", amount: "40mL" }]
     },
       "16oz": {
         Hot: [
-         {name: "Honey Syrup", amount: "2 pump"}, { name: "Espresso", amount: "2 shots" }, { name: "Matcha Powder", amount: "6g" }, {name: "Hot Kettle Water", amount: "70mL"}, { name: "Milk", amount: "10oz" }
+         {name: "Simple Syrup", amount: "2 pumps"}, { name: "Espresso", amount: "2 shots" }, { name: "Matcha Powder", amount: "6g" }, {name: "Hot Kettle Water", amount: "70mL"}, { name: "Milk", amount: "10oz" }
         ],
         Iced:[
-          {name: "Honey Syrup", amount: "4 pump"}, { name: "Espresso", amount: "2 shots" }, { name: "Milk", amount: "170mL" }, { name: "Ice", amount: "As needed" }, { name: "Batch Matcha", amount: "60mL" }
+          {name: "Simple Syrup", amount: "2 pumps"}, { name: "Espresso", amount: "2 shots" }, { name: "Milk", amount: "170mL" }, { name: "Ice", amount: "As needed" }, { name: "Batch Matcha", amount: "60mL" }
         ]
       },
       "20oz": {
         Iced: [
-          {name: "Honey Syrup", amount: "5 pump"}, { name: "Espresso", amount: "4 shots" }, { name: "Milk", amount: "220mL" }, { name: "Ice", amount: "As needed" }, { name: "Batch Matcha", amount: "80mL" }
+          {name: "Simple Syrup", amount: "4 pumps"}, { name: "Espresso", amount: "4 shots" }, { name: "Milk", amount: "220mL" }, { name: "Ice", amount: "As needed" }, { name: "Batch Matcha", amount: "80mL" }
         ]
       }
     },
     preparation: {
       Hot: [
-        "Pump syrup into the cup", "Whisk matcha with hot water until smooth then pour over the syrup in the cup", "Pull espresso shots and pour into the cup", "Steam milk, wipe the steam wand well, and purge wand", "Circle the milk pitcher then pour into the cup leaving 1/4 inch space from the top"
+        "Pump syrup into the cup", "Whisk matcha with hot water until smooth then pour over the syrup in the cup", "Pull espresso shots and pour into the cup then STIR", "Steam milk, wipe the steam wand well, and purge wand", "Circle the milk pitcher then pour into the cup leaving 1/4 inch space from the top"
       ],
       Iced: [
-        "Pump syrup into the cup", "Pull espresso shots and pour into the cup", "Pour in the milk and stir", "Fill with ice", "Squeeze batch matcha over the ice for layered effect"
+         "Pour the milk into the cup", "Pull espresso shots and pour into the milk", "Fill with ice", "Squeeze batch matcha over the ice for layered effect"
       ]    
     },
   },
@@ -126,7 +126,7 @@ const recipes = [
     prepTime: "3 min", method: "Layered / iced",
     sizes: {
       "12oz": [{ name: "Strawberry puree", amount: "20mL" }, { name: "Milk", amount: "120mL" }, { name: "Matcha mixture", amount: "50mL" }, { name: "Ice", amount: "Full cup" }],
-      "16oz": [{ name: "Strawberry puree", amount: "25mL" }, { name: "Milk", amount: "150mL" }, { name: "Matcha mixture", amount: "70mL" }, { name: "Ice", amount: "As needed" }],
+      "16oz": [{ name: "Strawberry puree", amount: "25mL" }, { name: "Milk", amount: "170mL" }, { name: "Matcha mixture", amount: "70mL" }, { name: "Ice", amount: "As needed" }],
       "20oz": [{ name: "Strawberry puree", amount: "30mL" }, { name: "Milk", amount: "200mL" }, { name: "Matcha mixture", amount: "90mL" }, { name: "Ice", amount: "Full cup" }]
     },
     steps: [ "Fill the cup with ice.", "Add strawberry puree to the cup.","Pour in milk.", "Slowly top with prepared matcha to create layers."],
@@ -142,30 +142,32 @@ const recipes = [
     sizes: {
       "12oz": {
         Hot: [
-          {name: "Vanilla Syrup", amount: "2 pumps"}, { name: "Matcha Powder", amount: "4g" }, {name: "Hot Kettle Water", amount: "50mL"}, {name: "Ube", amount: "1 Full Dropper"}, { name: "Milk", amount: "9oz" }
+          {name: "Cond Mix", amount: "20mL"}, {name: "Simple Syrup", amount: "1 pump"}, { name: "Matcha Powder", amount: "4g" }, {name: "Hot Kettle Water", amount: "50mL"}, {name: "Ube", amount: "1 Full Dropper"}, { name: "Milk", amount: "9oz" }
         ],
-       "Iced": [{name: "Vanilla Syrup", amount: "2 pumps"}, { name: "Milk", amount: "120mL" },{name: "Ube", amount: "1 Full Dropper"}, { name: "Ice", amount: "As needed" }, { name: "Batch Matcha", amount: "50mL" }]
+       "Iced": [
+        {name: "Cond Mix", amount: "20mL"}, { name: "Milk", amount: "120mL" },{name: "Ube", amount: "1 Full Dropper"}, { name: "Ice", amount: "As needed" }, { name: "Batch Matcha", amount: "50mL" }
+        ]
     },
       "16oz": {
         Hot: [
-         {name: "Vanilla Syrup", amount: "3 pumps"}, { name: "Matcha Powder", amount: "6g" }, {name: "Hot Kettle Water", amount: "70mL"}, {name: "Ube", amount: "1 Full Dropper"},{ name: "Milk", amount: "10oz" }
+         {name: "Cond Mix", amount: "20mL"}, {name: "Simple Syrup", amount: "1 pump"}, { name: "Matcha Powder", amount: "6g" }, {name: "Hot Kettle Water", amount: "70mL"}, {name: "Ube", amount: "1 Full Dropper"},{ name: "Milk", amount: "10oz" }
         ],
         Iced:[
-          {name: "Vanilla Syrup", amount: "3 pumps"}, { name: "Milk", amount: "150mL" }, { name: "Ice", amount: "As needed" }, {name: "Ube", amount: "1 Full Dropper"}, { name: "Batch Matcha", amount: "70mL" }
+          {name: "Cond Mix", amount: "20mL"}, { name: "Milk", amount: "170mL" }, { name: "Ice", amount: "As needed" }, {name: "Ube", amount: "1 Full Dropper"}, { name: "Batch Matcha", amount: "70mL" }
         ]
       },
       "20oz": {
         Iced: [
-          {name: "Vanilla Syrup", amount: "4 pumps"}, { name: "Milk", amount: "200mL" }, {name: "Ube", amount: "1 Full Dropper"}, { name: "Ice", amount: "As needed" }, { name: "Batch Matcha", amount: "90mL" }
+          {name: "Cond Mix", amount: "35mL"}, { name: "Milk", amount: "200mL" }, {name: "Ube", amount: "1 Full Dropper"}, { name: "Ice", amount: "As needed" }, { name: "Batch Matcha", amount: "90mL" }
         ]
       }
     },
     preparation: {
       Hot: [
-        "Pump syrup into the cup", "Whisk matcha with hot water until smooth then pour over the syrup in the cup", "Squeeze 1 full dropper of ube and mix into the matcha", "Steam milk, wipe the steam wand well, and purge wand", "Circle the milk pitcher then pour into the cup leaving 1/4 inch space from the top"
+        "Squeeze Cond Mix into cup and pump simple syrup into cup", "Whisk matcha with hot water until smooth then pour over the syrup in the cup", "Squeeze 1 full dropper of ube and STIR WELL", "Steam milk, wipe the steam wand well, and purge wand", "Circle the milk pitcher then pour into the cup leaving 1/4 inch space from the top"
       ],
       Iced: [
-        "Pump syrup into the cup", "Pour in the milk", "Squeeze 1 full dropper of ube and mix into the milk and mix well", "Fill with ice leaving space for the matcha layer", "Squeeze batch matcha over the ice for layered effect"
+        "Squeeze Cond Mix into cup", "Pour in the milk", "Squeeze 1 full dropper of ube and mix into the milk and MIX WELL", "Fill with ice leaving space for the matcha layer", "Squeeze batch matcha over the ice for layered effect"
       ]    
     },
     note: "For iced drinks, reduce milk volume by 20mL if the drink has a topping to avoid overflow."
@@ -194,7 +196,7 @@ const recipes = [
     prepTime: "1-2 min", method: "Layered / iced",
     sizes: {
       "12oz": [{name: "Honey Syrup", amount: "1 pump"}, { name: "Batch Matcha", amount: "50mL" }, { name: "Milk", amount: "120mL" }, { name: "Nana Custard", amount: "2.5 floz" }, { name: "Ice", amount: "Fill with 1 inch space" }],
-      "16oz": [{name: "Honey Syrup", amount: "2 pumps"},{ name: "Batch Matcha", amount: "70mL" }, { name: "Milk", amount: "150mL" }, { name: "Nana Custard", amount: "3 floz" }, { name: "Ice", amount: "Fill with 1 inch space" }],
+      "16oz": [{name: "Honey Syrup", amount: "2 pumps"},{ name: "Batch Matcha", amount: "70mL" }, { name: "Milk", amount: "170mL" }, { name: "Nana Custard", amount: "3 floz" }, { name: "Ice", amount: "Fill with 1 inch space" }],
       "20oz": [{name: "Honey Syrup", amount: "3 pumps"},{ name: "Batch Matcha", amount: "90mL" }, { name: "Milk", amount: "200mL" }, { name: "Nana Custard", amount: "4 floz" }, { name: "Ice", amount: "Fill with 1 inch space" }]
     },
     steps: ["Add the syrup, matcha, and milk to the cup then stir well", "Scoop in ice leaving space at the top", "Top with Nana Custard."],
@@ -226,7 +228,7 @@ const recipes = [
           { name: "Whole milk", amount: "10oz" }
         ],
         Iced:[
-          { name: "Syrup", amount: "Standard 4 pumps (Follow # on ticket)" }, { name: "Espresso", amount: "2 shots" }, { name: "Milk", amount: "150mL" },  {name: "Ice", amount: "Fill with ice"}
+          { name: "Syrup", amount: "Standard 4 pumps (Follow # on ticket)" }, { name: "Espresso", amount: "2 shots" }, { name: "Milk", amount: "170mL" },  {name: "Ice", amount: "Fill with ice"}
         ]
       },
       "20oz": {
@@ -271,7 +273,7 @@ const recipes = [
           { name: "Whole milk", amount: "10oz" }
         ],
         Iced:[
-          { name: "Hollander Chocolate syrup", amount: "1.5 pumps" }, { name: "Espresso", amount: "2 shots" }, { name: "Milk", amount: "150mL" },  {name: "Ice", amount: "Fill with ice"}
+          { name: "Hollander Chocolate syrup", amount: "1.5 pumps" }, { name: "Espresso", amount: "2 shots" }, { name: "Milk", amount: "170mL" },  {name: "Ice", amount: "Fill with ice"}
         ]
       },
       "20oz": {
@@ -315,7 +317,7 @@ const recipes = [
           { name: "Whole milk", amount: "10oz" }
         ],
         Iced:[
-          { name: "Hollander White Chocolate syrup", amount: "1.5 pumps" }, { name: "Espresso", amount: "2 shots" }, { name: "Milk", amount: "150mL" },  {name: "Ice", amount: "Fill with ice"}
+          { name: "Hollander White Chocolate syrup", amount: "1.5 pumps" }, { name: "Espresso", amount: "2 shots" }, { name: "Milk", amount: "170mL" },  {name: "Ice", amount: "Fill with ice"}
         ]
       },
       "20oz": {
@@ -363,7 +365,7 @@ const recipes = [
           { name: "Whole milk", amount: "10oz" }
         ],
         Iced:[
-          { name: "Coconut Syrup", amount: "1 pump" }, { name: "Mac Nut Syrup", amount: "3 pumps" }, { name: "Espresso", amount: "2 shots" }, { name: "Milk", amount: "150mL" },  {name: "Ice", amount: "Fill with ice"}
+          { name: "Coconut Syrup", amount: "1 pump" }, { name: "Mac Nut Syrup", amount: "3 pumps" }, { name: "Espresso", amount: "2 shots" }, { name: "Milk", amount: "170mL" },  {name: "Ice", amount: "Fill with ice"}
         ]
       },
       "20oz": {
@@ -488,38 +490,38 @@ const recipes = [
    sizes: {
       "12oz": {
         Hot: [
-          { name: "Vanilla syrup", amount: "2 pumps" },
+          {name: "Cond Mix", amount: "20mL"},
           { name: "Ube", amount: "Full Dropper" },
           { name: "Espresso", amount: "2 shots" },
           { name: "Whole milk", amount: "9oz" }
         ],
         Iced: [
-          { name: "Vanilla syrup", amount: "2 pumps" }, { name: "Ube", amount: "Full Dropper" }, { name: "Espresso", amount: "2 shots" }, { name: "Milk", amount: "120mL"},  {name: "Ice", amount: "Fill with ice"}
+          { name: "Cond Mix", amount: "20mL" }, { name: "Ube", amount: "Full Dropper" }, { name: "Espresso", amount: "2 shots" }, { name: "Milk", amount: "120mL"},  {name: "Ice", amount: "Fill with ice"}
       ]
     },
       "16oz": {
         Hot: [
-          { name: "Vanilla syrup", amount: "3 pumps" },
+          { name: "Cond Mix", amount: "30mL" },
           { name: "Ube", amount: "Full Dropper" },
           { name: "Espresso", amount: "2 shots" },
           { name: "Whole milk", amount: "9oz" }
         ],
         Iced:[
-          { name: "Vanilla syrup", amount: "3 pumps" }, { name: "Ube", amount: "Full Dropper" }, { name: "Espresso", amount: "2 shots" }, { name: "Milk", amount: "150mL" },  {name: "Ice", amount: "Fill with ice"}
+          { name: "Cond Mix", amount: "30mL" }, { name: "Ube", amount: "Full Dropper" }, { name: "Espresso", amount: "2 shots" }, { name: "Milk", amount: "170mL" },  {name: "Ice", amount: "Fill with ice"}
         ]
       },
       "20oz": {
         Iced: [
-          { name: "Vanilla syrup", amount: "4 pumps" }, { name: "Ube", amount: "Full Dropper" }, { name: "Espresso", amount: "4 shots" }, { name: "Milk", amount: "250mL (200mL for drinks with a topping)"}, {name: "Ice", amount: "Fill with ice"}
+          { name: "Cond Mix", amount: "40mL" }, { name: "Ube", amount: "Full Dropper" }, { name: "Espresso", amount: "4 shots" }, { name: "Milk", amount: "250mL (200mL for drinks with a topping)"}, {name: "Ice", amount: "Fill with ice"}
         ]
       }
     },
     preparation: {
       Hot: [
-        "Pump syrup into the cup", "Pull espresso shots and empty over the syrup into the cup", "Add in the ube dropper", "Swirl to incorporate the syrup", "Steam milk, wipe the steam wand well, and purge wand", "Circle the milk pitcher then pour into the cup leaving 1/4 inch space from the top"
+        "Squeeze Cond Mix into the cup", "Pull espresso shots and empty over the syrup into the cup and STIR", "Add in the ube dropper", "Swirl to incorporate the syrup", "Steam milk, wipe the steam wand well, and purge wand", "Circle the milk pitcher then pour into the cup leaving 1/4 inch space from the top"
       ],
       Iced: [
-        "Pump syrup into the cup", "Pour in the milk", "Add in the ube dropper", "Stir to incorporate the ube", "Fill with ice", "Pull espresso shots and empty over ice to create a layered effect"
+        "Squeeze Cond Mix into the cup", "Pour in the milk", "Add in the ube dropper", "Stir to incorporate the ube", "Fill with ice", "Pull espresso shots and empty over ice to create a layered effect"
       ]    
     },
     note: "For iced drinks, use the lower milk volume if the drink has a topping to avoid overflow."
@@ -534,7 +536,7 @@ const recipes = [
     prepTime: "1-2 min", method: "Espresso / Iced",
    sizes: {
       "12oz": [
-          { name: "Honey Syrup", amount: "1 pump" }, {name: "Black Sugar Syrup", amount: "15mL" }, { name: "Condensed Mixture (Mix)", amount: "15mL" }, { name: "Cold Brew", amount: "150mL" }, { name: "Milk", amount: "40mL"},  {name: "Ice", amount: "Fill with ice"}
+          { name: "Honey Syrup", amount: "1 pump" }, {name: "Black Sugar Syrup", amount: "15mL" }, { name: "Condensed Mixture (Mix)", amount: "15mL" }, { name: "Cold Brew", amount: "170mL" }, { name: "Milk", amount: "40mL"},  {name: "Ice", amount: "Fill with ice"}
       ],
       "16oz": [
           { name: "Honey Syrup", amount: "2 pumps" }, { name: "Black Sugar Syrup", amount: "20mL" }, { name: "Condensed Mixture (Mix)", amount: "60mL" }, { name: "Cold Brew", amount: "200mL" }, { name: "Milk", amount: "60mL" },  {name: "Ice", amount: "Fill with ice"}
