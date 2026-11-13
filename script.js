@@ -1257,9 +1257,23 @@ if (!sizeOptions.includes(activeSize)) {
   </div>
 ` : ""}
 
-    <div class="modifier-controls">
-      ${Object.entries(modifiers).map(([key, options]) => `<label class="modifier-field"><span>${modifierLabels[key] || key}</span><select data-modifier="${key}">${options.map(option => `<option value="${option}" ${selectedModifiers[key] === option ? "selected" : ""}>${option}</option>`).join("")}</select></label>`).join("")}
-    </div>
+    ${recipe.category !== "Batch Recipes" ? `
+  <div class="modifier-controls">
+    ${Object.entries(modifiers).map(([key, options]) => `
+      <label class="modifier-field">
+        <span>${modifierLabels[key] || key}</span>
+        <select data-modifier="${key}">
+          ${options.map(option => `
+            <option value="${option}" ${selectedModifiers[key] === option ? "selected" : ""}>
+              ${option}
+            </option>
+          `).join("")}
+        </select>
+      </label>
+    `).join("")}
+  </div>
+` : ""}
+
     <div class="recipe-stats"><span class="stat">⏱ <strong>${recipe.prepTime || "—"}</strong></span><span class="stat">Method: <strong>${activeTemperature === "Hot" ? "Hot preparation" : (recipe.method || "Iced preparation")}</strong></span></div>
     <h3 class="detail-heading">Ingredients <span></span></h3>
     <ul class="ingredient-list">${ingredients.map(item => `<li><span>${item.name}</span><span>${item.amount}</span></li>`).join("")}</ul>
