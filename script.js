@@ -1030,6 +1030,30 @@ const recipes = [
     },
     steps: ["Put ingredients together in a pan over Simmer function", "Stir continuously until sugar is completely dissolved", "Take off hot plate and let it cool down", "Grab a black lid squeeze bottle and 32oz mason jar", "Fill mason jar with syrup then cap it", "Then fill squeeze bottle with remainder using a funnel", "Place dissolvable label on squeeze bottle & mason jar, then date mark, no EXP date needed", "Store both mason jar and squeeze bottle in the fridge"],
   },
+
+
+  // NANA SYRUP
+  {
+    id: "nana-syrup", name: "Nana Syrup", category: "Batch Recipes", icon: "🍌",
+    description: "Nana syrup for various drinks.",
+    prepTime: "5 mins", method: "Batch",
+    sizes: {
+      "Batch": [{ name: "Ripe Bananas", amount: "6" }, { name: "RO Water", amount: "2 cups"}, {name: "Brown Sugar", amount: "2 cups"}, {name: "Cinnamon Powder", amount: "2 TSP"}],
+    },
+    steps: ["Put bananas, brown sugar, and water together in a pot over Simmer function", "Use masher to break down the bananas in the pan", "Bring banana syrup to a simmer over 1000 power on hot plate and stir in between minutes", "Heat for 5 minutes minimum until banana is slightly caramelized", "Add in the cinnamon and stir again", "Use red kitchen aid immersion blender to smooth out the banana syrup while its hot", "Rinse and pour syrup into a 64oz mason pitcher", "Place dissolvable label on squeeze bottle & mason jar, then date mark, no EXP date needed", "Wait until completely cool then store in the fridge"],
+  },
+
+  // BATCH TEA
+  {
+    id: "batch-tea", name: "Batch Tea", category: "Batch Recipes", icon: "",
+    description: "Batch tea for various drinks.",
+    prepTime: "5 mins", method: "Batch",
+    sizes: {
+      "Green Tea": [{ name: "Green Tea Bags", amount: "8 bags" }, { name: "185º RO Water", amount: "4 cups" }, {name: "Steep Time", amount: "7 minutes"}, { name: "Storage Jar", amount: "1 Gallon Glass Jar" }],
+      "Black Tea": [{ name: "Black Tea Bags", amount: "8 bags" }, { name: "195º RO Water", amount: "4 cups" }, {name: "Steep Time", amount: "5 minutes"}, { name: "Storage Jar", amount: "64 oz Mason Pitcher" }],
+    },
+    steps: ["Star heating RO water in the kettle", "Use 4 cups measuring cup and place the 8 bags inside", "While holding onto the bag strings, pour in the water to 4 cups", "Green Tea: Steep for 7 minutes / Black Tea: Steep for 5 minutes", "Pour into jar", "Fill measuring cup with the bags in it still with regular RO water from faucet and pour into jar", "Place dissolvable label on jar, then date mark, no EXP date needed", "Wait until completely cool then store in the fridge on the right of double door fridge"],
+  },
 ]
 
 
