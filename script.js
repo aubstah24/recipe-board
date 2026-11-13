@@ -5,6 +5,64 @@
 */
 const recipes = [
 
+/* MONTHLY SPECIALS */
+
+  // PUMPKIN CRUNCH LATTE
+  {
+      id: "pumpkin-latte", name: "Pumpkin Crunch Latte", category: "Monthly Specials", icon: "☕",
+      description: "Espresso latte with pumpkin crunch puree topped with toffee bits", temperatures: ["Iced"],
+      prepTime: "3 min", method: "Layered / iced",
+      sizes: {
+        "12oz": [{ name: "Pumpkin Crunch", amount: "1 floz" }, { name: "Milk", amount: "120mL" }, {name: "Pumpkin Spice", amount: "1 pass" }, { name: "Espresso", amount: "2 shots" }, { name: "Sweet Cloud", amount: "Cover ice" }, { name: "Ice", amount: "Fill with 1/4 inch space" }, { name: "Toffee Bits", amount: "1 scoop" }],
+        "16oz": [{ name: "Pumpkin Crunch", amount: "1.5 floz" }, { name: "Milk", amount: "150mL" }, {name: "Pumpkin Spice", amount: "1 pass" }, { name: "Espresso", amount: "2 shots" }, { name: "Sweet Cloud", amount: "Cover ice" },{ name: "Ice", amount: "Fill with 1/4 inch space" }, { name: "Toffee Bits", amount: "1 scoop" }],
+        "20oz": [{ name: "Pumpkin Crunch", amount: "2 floz" }, { name: "Milk", amount: "200mL" }, {name: "Pumpkin Spice", amount: "1 pass" }, { name: "Espresso", amount: "4 shots" }, { name: "Sweet Cloud", amount: "Cover ice" }, { name: "Ice", amount: "Fill with 1/4 inch space" }, { name: "Toffee Bits", amount: "1 scoop" }]
+      },
+      steps: ["Add the pumpkin crunch and milk to the cup then stir well", "1 pass of pumpkin spice walls", "Scoop in ice leaving space at the top", "Pour in espresso", "Cover ice with sweet cloud", "Top with the toffee bits"],
+    },
+
+  // MATCHA PUMPKIN CRUNCH LATTE
+  {
+    id: "matcha-pumpkin-latte", name: "Matcha-Pumpkin Crunch Latte", category: "Monthly Specials", icon: "抹",
+    description: "Matcha latte topped with a pumpkin crunch puree.", temperatures: ["Iced"],
+    prepTime: "2 min", method: "Layered / iced",
+    sizes: {
+      "12oz": [{name: "Pumpkin Crunch", amount: "1 floz"}, { name: "Batch Matcha", amount: "50mL" }, { name: "Milk", amount: "120mL" }, { name: "Ice", amount: "Fill with 1 inch space" }, {name: "Pumpkin Spice", amount: "1 pass" },{ name: "Toffee Bits", amount: "1 scoop" }],
+      "16oz": [{name: "Pumpkin Crunch", amount: "1.5 floz"},{ name: "Batch Matcha", amount: "70mL" }, { name: "Milk", amount: "150mL" }, { name: "Ice", amount: "Fill with 1 inch space" }, {name: "Pumpkin Spice", amount: "1 pass" },{ name: "Toffee Bits", amount: "1 scoop" }],
+      "20oz": [{name: "Pumpkin Crunch", amount: "2 floz"},{ name: "Batch Matcha", amount: "90mL" }, { name: "Milk", amount: "200mL" }, { name: "Ice", amount: "Fill with 1 inch space" }, {name: "Pumpkin Spice", amount: "1 pass" },{ name: "Toffee Bits", amount: "1 scoop" }]
+    },
+    steps: ["Add the pumpkin crunch and milk to the cup then stir well", "1 pass of pumpkin spice walls", "Scoop in ice leaving space at the top", "Squeeze batch matcha over the ice for layered effect", "Top with the toffee bits"],
+    note: "For Less sweet or No added sweetener, omit the honey syrup."
+  },
+
+  // CHANTILLY LATTE
+  {
+    id: "chantilly-latte", name: "Chantilly Latte", category: "Monthly Specials", icon: "☕",
+    description: "Toasted marshmallow espresso latte topped with a chantilly custard", temperatures: ["Iced"],
+    prepTime: "2-3 min", method: "Layered / iced",
+    sizes: {
+      "12oz": [{name: "Toasted Marshmallow", amount: "1 pump"}, { name: "Espresso", amount: "2 shots" }, { name: "Milk", amount: "120mL" }, { name: "Chantilly Custard", amount: "2.5 floz" }, { name: "Ice", amount: "Fill with 1 inch space" }],
+      "16oz": [{name: "Toasted Marshmallow", amount: "2 pumps"}, { name: "Espresso", amount: "2 shots" }, { name: "Milk", amount: "150mL" }, { name: "Chantilly Custard", amount: "3 floz" }, { name: "Ice", amount: "Fill with 1 inch space" }],
+      "20oz": [{name: "Toasted Marshmallow", amount: "3 pumps"}, { name: "Espresso", amount: "4 shots" }, { name: "Milk", amount: "200mL" }, { name: "Chantilly Custard", amount: "4 floz" }, { name: "Ice", amount: "Fill with 1 inch space" }]
+    },
+    steps: ["Add the syrup, espresso, and milk to the cup then stir well", "Scoop in ice leaving space at the top", "Top with ChantillyCustard."],
+  },
+
+  // MATCHA CHANTILLY LATTE
+  {
+    id: "matcha-chantilly-latte", name: "Matcha Chantilly Latte", category: "Monthly Specials", icon: "抹",
+    description: "Matcha latte topped with a chantilly custard", temperatures: ["Iced"],
+    prepTime: "2-3 min", method: "Layered / iced",
+    sizes: {
+      "12oz": [{name: "Simple Syrup", amount: "1 pump"}, { name: "Espresso", amount: "2 shots" }, { name: "Milk", amount: "120mL" }, { name: "Chantilly Custard", amount: "2.5 floz" }, { name: "Ice", amount: "Fill with 1 inch space" }],
+      "16oz": [{name: "Toasted Marshmallow", amount: "2 pumps"}, { name: "Espresso", amount: "2 shots" }, { name: "Milk", amount: "150mL" }, { name: "Chantilly Custard", amount: "3 floz" }, { name: "Ice", amount: "Fill with 1 inch space" }],
+      "20oz": [{name: "Toasted Marshmallow", amount: "3 pumps"}, { name: "Espresso", amount: "4 shots" }, { name: "Milk", amount: "200mL" }, { name: "Chantilly Custard", amount: "4 floz" }, { name: "Ice", amount: "Fill with 1 inch space" }]
+    },
+    steps: ["Add the syrup, espresso, and milk to the cup then stir well", "Scoop in ice leaving space at the top", "Top with ChantillyCustard."],
+  },
+
+
+
+ 
 /* MATCHA DRINKS */
 
   // MATCHA LATTE
@@ -863,7 +921,7 @@ const recipes = [
 
   // Pink Milk
   {
-    id: "Pink-Milk", name: "Pink Milk", category: "Keiki", icon: "�",
+    id: "pink-milk", name: "Pink Milk", category: "Keiki", icon: "",
     description: "A delightful blend of strawberry and milk",
     prepTime: "1–2 min", method: "Built / iced",
     sizes: {
@@ -875,7 +933,7 @@ const recipes = [
 
  // Blue Milk
   {
-    id: "Blue-Milk", name: "Blue Milk", category: "Keiki", icon: "",
+    id: "blue-milk", name: "Blue Milk", category: "Keiki", icon: "",
     description: "A delightful blend of blue and strawberry flavored milk",
     prepTime: "1–2 min", method: "Built / iced",
     sizes: {
@@ -887,7 +945,7 @@ const recipes = [
 
    // Chocolate Milk
   {
-    id: "Chocolate-Milk", name: "Chocolate Milk", category: "Keiki", icon: "",
+    id: "chocolate-milk", name: "Chocolate Milk", category: "Keiki", icon: "",
     description: "A delightful blend of chocolate and milk",
     prepTime: "1–2 min", method: "Built / iced",
     sizes: {
@@ -899,18 +957,80 @@ const recipes = [
 
   // Hot Chocolate Milk
   {
-    id: "Hot-Chocolate-Milk", name: "Hot Chocolate Milk", category: "Keiki", icon: "",
-    description: "A delightful blend of chocolate and milk",
-    prepTime: "1–2 min", method: "Built / Hot",
+    id: "hot-chocolate-milk", name: "Hot Chocolate Milk", category: "Keiki", icon: "",
+    description: "A delightful blend of chocolate and milk", temperatures: ["Hot"],
+    prepTime: "1–2 min", method: "Hot",
     sizes: {
       "12oz": [{ name: "Hersheys Chocolate Syrup", amount: "15mL" }, { name: "Milk", amount: "8oz" }],
     },
     steps: ["Put the chocolate syrup into the cup", "Steam whole milk to kids temperature", "Pour the steamed milk into the cup and stir well", "Serve."],
-  }
- ];
+  },
+ 
 
 
+/* BATCH RECIPES */
 
+  // Batch Matcha
+  {
+    id: "batch-matcha", name: "Batch Matcha", category: "Batch Recipes", icon: "🍵",
+    description: "A simple batch of matcha for multiple drinks.",
+    prepTime: "5–10 min", method: "Batch",
+    sizes: {
+      "Batch": [{ name: "Matcha Powder", amount: "60g" }, { name: "RO Water", amount: "890mL" }],
+    },
+    steps: ["Start heating RO water in the temp control kettle", "Grab the bigger all white bowl and fill with ice to 3/4 of the way up and fill with faucet water to make an ice bath", "Sift the matcha powder into white bowl with black handle", "Once water is heated, pour in 350mL of hot water", "Whisk with the chasen until all bumps are gone (it should look like a thick paste)", "Grab a clean milk pitcher and rinse it", "Pour RO faucet water into it and pour water over the matcha paste until the total mL make 890mL", "Pour matcha into the squeeze bottle then place sideways into the ice bath bowl"],
+    note: ["Do not leave chasen upside down, soaking in water, or leave it unrinsed for a long time.  Place chasen back on the stand and let it dry."],
+  },
+
+
+   // Cloud 
+  {
+    id: "cloud-batch", name: "Batch Cloud", category: "Batch Recipes", icon: "☁️",
+    description: "Cold foam topper recipes",
+    prepTime: "5–10 min", method: "Batch",
+    sizes: {
+      "Cloud Base": [{ name: "Heavy Cream", amount: "24 floz" }, { name: "Powdered Sugar", amount: "2 floz" }, { name: "Vanilla Extract", amount: "Splash" }],
+      "Sweet Cloud": [{ name: "Heavy Cream", amount: "15 floz" }, { name: "Powdered Sugar", amount: "1 floz" }, { name: "Cond Mix", amount: "8 floz" }],
+      "Vanilla Cloud": [{ name: "Heavy Cream", amount: "20 floz" }, { name: "Powdered Sugar", amount: "1 floz" }, { name: "Torani Vanilla Bean Syrup", amount: "3 floz" }],
+    },
+    steps: ["Put all ingredients into the plastic tall pitcher under Bunn machine", "Use black hand whisker to blend ingredients together until it creates soft peaks (roughly 2 minutes)", "Pour into foam dispenser bottle and use spatula to scrape sides of pitcher", "Place dissolvable label on the foam dispenser bottle and date mark EXP in 3 days", "Store on bottom shelf of fridge"],
+    note: ["Be careful NOT TO OVERWHIP the cream, it will thicken very fast"],
+  },
+
+  // VOG MATCHA
+  {
+    id: "vog-matcha", name: "Vog Matcha", category: "Batch Recipes", icon: "🍵",
+    description: "Matcha paste for Big Island Vog drink.",
+    prepTime: "5–10 min", method: "Batch",
+    sizes: {
+      "1 Bottle": [{ name: "Matcha Powder", amount: "50g" }, { name: "RO Water", amount: "400mL" }],
+    },
+    steps: ["Start heating RO water in the temp control kettle", "Grab the bigger all white bowl and fill with ice to 3/4 of the way up and fill with faucet water to make an ice bath", "Sift the matcha powder into white bowl with black handle", "Once water is heated, pour in 200mL of hot water", "Whisk with the chasen until all bumps are gone (it should look like a thick paste)", "Grab a clean milk pitcher and rinse it", "Pour RO faucet water into it and pour water over the matcha paste until the total mL make 400mL", "Pour matcha into the squeeze bottle then place sideways into the ice bath bowl"],
+    note: ["You can make up to 2 batches for 2 squeeze bottles.  Do not leave chasen upside down, soaking in water, or leave it unrinsed for a long time.  Place chasen back on the stand and let it dry."],
+  },
+
+  // COND MIX
+  {
+    id: "cond-mix", name: "Cond Mix", category: "Batch Recipes", icon: "",
+    description: "Condensed milk mix for various drinks.",
+    prepTime: "2-3 min", method: "Batch",
+    sizes: {
+      "Batch": [{ name: "Condensed Milk", amount: "1 can" }, { name: "Evaporated Milk", amount: "1 can" }],
+    },
+    steps: ["Put ingredients together in a 32oz mason jar", "Mix together with a spatula until combined", "Grab and test a squeeze bottle making sure water doesn't leak", "Fill squeeze bottle with mixture then cap it", "Place dissolvable label on squeeze bottle and date mark EXP in 3 days", "Store both mason jar and squeeze bottle in the fridge"],
+  },
+
+   // BLACK SUGAR SYRUP
+  {
+    id: "black-sugar-syrup", name: "Black Sugar Syrup", category: "Batch Recipes", icon: "",
+    description: "Black sugar syrup for various drinks.",
+    prepTime: "5 mins", method: "Batch",
+    sizes: {
+      "Batch": [{ name: "Black Sugar", amount: "1 bag" }, { name: "RO Water", amount: "3.5 cups" }],
+    },
+    steps: ["Put ingredients together in a pan over Simmer function", "Stir continuously until sugar is completely dissolved", "Take off hot plate and let it cool down", "Grab a black lid squeeze bottle and 32oz mason jar", "Fill mason jar with syrup then cap it", "Then fill squeeze bottle with remainder using a funnel", "Place dissolvable label on squeeze bottle & mason jar, then date mark, no EXP date needed", "Store both mason jar and squeeze bottle in the fridge"],
+  },
+]
 
 
 
@@ -929,8 +1049,8 @@ recipes.forEach(recipe => {
   }
 });
 
-const categories = ["All", "Monthly Specials", "Matcha", "Espresso Lattes", "Custard Lattes", "Regular Coffee", "Teas/Lemonade", "Dirty Sodas", "Keiki"];
-let activeCategory = "All";
+const categories = ["Monthly Specials", "Matcha", "Espresso Lattes", "Custard Lattes", "Regular Coffee", "Teas/Lemonade", "Dirty Sodas", "Keiki", "Batch Recipes"];
+let activeCategory = "Monthly Specials";
 let activeRecipeId = null;
 let activeSize = "16oz";
 let activeTemperature = "Iced";
@@ -958,7 +1078,7 @@ function renderCategoryNav() {
 
 function getVisibleRecipes() {
   return recipes.filter(recipe => {
-    const matchesCategory = activeCategory === "All" || recipe.category === activeCategory;
+    const matchesCategory = activeCategory === "Monthly Specials" || recipe.category === activeCategory;
     const matchesSearch = `${recipe.name} ${recipe.category}`.toLowerCase().includes(searchTerm);
     return matchesCategory && matchesSearch;
   });
@@ -971,7 +1091,7 @@ function renderRecipeSections() {
     return;
   }
 
-  const sectionCategories = activeCategory === "All" ? categories.slice(1) : [activeCategory];
+  const sectionCategories = activeCategory === "Monthly Specials" ? [activeCategory] : categories.slice(1).filter(cat => visibleRecipes.some(recipe => recipe.category === cat));
   recipeSections.innerHTML = sectionCategories.map(category => {
     const group = visibleRecipes.filter(recipe => recipe.category === category);
     if (!group.length) return "";
@@ -1040,16 +1160,6 @@ function renderRecipePanel() {
   // Hot drinks should not list ice. For iced drinks, retain the recipe's ice quantity.
   if (activeTemperature === "Hot") ingredients = ingredients.filter(item => !/ice/i.test(item.name));
 
-  // Apply sweetness choice to the recipe display.
-
-  // if (selectedModifiers.sweetness) {
-  //   const sweetnessAmount = selectedModifiers.sweetness === "Less sweet" ? "Half of standard amount (1 floz less for custard toppings)" :
-  //     selectedModifiers.sweetness === "No added sweetener" ? "0 (omit sweetener)" : "Standard recipe amount";
-  //   const sweetIndex = ingredients.findIndex(item => /syrup|sweetener|sauce/i.test(item.name));
-  //   if (sweetIndex >= 0) ingredients[sweetIndex] = { ...ingredients[sweetIndex], amount: sweetnessAmount };
-  //   else if (selectedModifiers.sweetness !== "Regular") ingredients.push({ name: "Sweetness adjustment", amount: sweetnessAmount });
-  // }
-
 
   // Apply sweetness based on the drink's actual sweetener.
   if (selectedModifiers.sweetness) {
@@ -1065,7 +1175,7 @@ function renderRecipePanel() {
         const item = ingredients[sweetenerIndex];
         ingredients[sweetenerIndex] = {
           ...item,
-          amount: `Half of standard amount (${item.amount})`
+          amount: `Half of standard amount (Normal = ${item.amount})`
         };
       } else {
         // If a sweet topping is the main sweetener, reduce the topping.
@@ -1105,18 +1215,48 @@ function renderRecipePanel() {
     else ingredients.push({ name: extra, amount: "Add 1/2 of the standard portion" });
   }
 
+  const sizeOptions = recipe.category === "Batch Recipes"
+  ? Object.keys(recipe.sizes)
+  : ["12oz", "16oz", "20oz"];
+
+if (!sizeOptions.includes(activeSize)) {
+  activeSize = sizeOptions[0];
+}
+
   recipePanel.className = "recipe-panel";
   recipePanel.innerHTML = `
     <div class="recipe-topline"><p class="eyebrow">RECIPE DETAILS</p><span class="recipe-category-tag">${recipe.category}</span></div>
     <h2 class="recipe-name">${recipe.name}</h2><p class="recipe-description">${recipe.description || ""}</p>
+   ${recipe.category === "Batch Recipes"
+  ? `
+    <p class="size-label">BATCH SIZE</p>
+    <div class="size-switch" role="group" aria-label="Batch size">
+      ${Object.keys(recipe.sizes).map(size => `
+        <button type="button"
+          class="size-button ${activeSize === size ? "active" : ""}"
+          data-size="${size}"
+          aria-pressed="${activeSize === size}">
+          ${size}
+        </button>
+      `).join("")}
+    </div>
+  `
+  : `
     <p class="size-label">CUP SIZE</p>
     <div class="size-switch" role="group" aria-label="Drink size">
-      ${["12oz", "16oz", "20oz"].map(size => `<button type="button" class="size-button ${activeSize === size ? "active" : ""}" data-size="${size}" aria-pressed="${activeSize === size}">${size}</button>`).join("")}
+      ${["12oz", "16oz", "20oz"].map(size =>
+        `<button type="button" class="size-button ${activeSize === size ? "active" : ""}" data-size="${size}" aria-pressed="${activeSize === size}">${size}</button>`
+      ).join("")}
     </div>
-    <p class="size-label">TEMPERATURE</p>
-    <div class="size-switch temperature-switch" role="group" aria-label="Drink temperature">
-      ${temperatures.map(temp => `<button type="button" class="size-button ${activeTemperature === temp ? "active" : ""}" data-temperature="${temp}" aria-pressed="${activeTemperature === temp}">${temp}</button>`).join("")}
-    </div>
+  `
+}
+   ${recipe.category !== "Batch Recipes" ? `
+  <p class="size-label">TEMPERATURE</p>
+  <div class="size-switch temperature-switch" role="group" aria-label="Drink temperature">
+    ${temperatures.map(temp => `<button type="button" class="size-button ${activeTemperature === temp ? "active" : ""}" data-temperature="${temp}" aria-pressed="${activeTemperature === temp}">${temp}</button>`).join("")}
+  </div>
+` : ""}
+
     <div class="modifier-controls">
       ${Object.entries(modifiers).map(([key, options]) => `<label class="modifier-field"><span>${modifierLabels[key] || key}</span><select data-modifier="${key}">${options.map(option => `<option value="${option}" ${selectedModifiers[key] === option ? "selected" : ""}>${option}</option>`).join("")}</select></label>`).join("")}
     </div>
