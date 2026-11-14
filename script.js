@@ -13,9 +13,9 @@ const recipes = [
       description: "Espresso latte with pumpkin crunch puree topped with toffee bits", temperatures: ["Iced"],
       prepTime: "3 min", method: "Layered / iced",
       sizes: {
-        "12oz": [{ name: "Pumpkin Crunch", amount: "1 floz" }, { name: "Milk", amount: "120mL" }, {name: "Pumpkin Spice", amount: "1 pass" }, { name: "Espresso", amount: "2 shots" }, { name: "Sweet Cloud", amount: "Cover ice" }, { name: "Ice", amount: "Fill with 1/4 inch space" }, { name: "Toffee Bits", amount: "1 scoop" }],
-        "16oz": [{ name: "Pumpkin Crunch", amount: "1.5 floz" }, { name: "Milk", amount: "150mL" }, {name: "Pumpkin Spice", amount: "1 pass" }, { name: "Espresso", amount: "2 shots" }, { name: "Sweet Cloud", amount: "Cover ice" },{ name: "Ice", amount: "Fill with 1/4 inch space" }, { name: "Toffee Bits", amount: "1 scoop" }],
-        "20oz": [{ name: "Pumpkin Crunch", amount: "2 floz" }, { name: "Milk", amount: "200mL" }, {name: "Pumpkin Spice", amount: "1 pass" }, { name: "Espresso", amount: "4 shots" }, { name: "Sweet Cloud", amount: "Cover ice" }, { name: "Ice", amount: "Fill with 1/4 inch space" }, { name: "Toffee Bits", amount: "1 scoop" }]
+        "12oz": [{ name: "Pumpkin Crunch", amount: "1 floz" }, { name: "Milk", amount: "120mL" }, {name: "Pumpkin Spice", amount: "1 pass" }, { name: "Espresso", amount: "2 shots" }, { name: "Sweet Cloud", amount: "Cover ice" }, { name: "Ice", amount: "Fill space" }, { name: "Toffee Bits", amount: "1 scoop" }],
+        "16oz": [{ name: "Pumpkin Crunch", amount: "1.5 floz" }, { name: "Milk", amount: "150mL" }, {name: "Pumpkin Spice", amount: "1 pass" }, { name: "Espresso", amount: "2 shots" }, { name: "Sweet Cloud", amount: "Cover ice" },{ name: "Ice", amount: "Fill space" }, { name: "Toffee Bits", amount: "1 scoop" }],
+        "20oz": [{ name: "Pumpkin Crunch", amount: "2 floz" }, { name: "Milk", amount: "200mL" }, {name: "Pumpkin Spice", amount: "1 pass" }, { name: "Espresso", amount: "4 shots" }, { name: "Sweet Cloud", amount: "Cover ice" }, { name: "Ice", amount: "Fill space" }, { name: "Toffee Bits", amount: "1 scoop" }]
       },
       steps: ["Add the pumpkin crunch and milk to the cup then stir well", "1 pass of pumpkin spice walls", "Scoop in ice leaving space at the top", "Pour in espresso", "Cover ice with sweet cloud", "Top with the toffee bits"],
     },
@@ -54,8 +54,8 @@ const recipes = [
     prepTime: "2-3 min", method: "Layered / iced",
     sizes: {
       "12oz": [{name: "Simple Syrup", amount: "1 pump"}, { name: "Espresso", amount: "2 shots" }, { name: "Milk", amount: "120mL" }, { name: "Chantilly Custard", amount: "2.5 floz" }, { name: "Ice", amount: "Fill with 1 inch space" }],
-      "16oz": [{name: "Toasted Marshmallow", amount: "2 pumps"}, { name: "Espresso", amount: "2 shots" }, { name: "Milk", amount: "150mL" }, { name: "Chantilly Custard", amount: "3 floz" }, { name: "Ice", amount: "Fill with 1 inch space" }],
-      "20oz": [{name: "Toasted Marshmallow", amount: "3 pumps"}, { name: "Espresso", amount: "4 shots" }, { name: "Milk", amount: "200mL" }, { name: "Chantilly Custard", amount: "4 floz" }, { name: "Ice", amount: "Fill with 1 inch space" }]
+      "16oz": [{name: "Simple Syrup", amount: "2 pumps"}, { name: "Espresso", amount: "2 shots" }, { name: "Milk", amount: "150mL" }, { name: "Chantilly Custard", amount: "3 floz" }, { name: "Ice", amount: "Fill with 1 inch space" }],
+      "20oz": [{name: "Simple Syrup", amount: "3 pumps"}, { name: "Espresso", amount: "4 shots" }, { name: "Milk", amount: "200mL" }, { name: "Chantilly Custard", amount: "4 floz" }, { name: "Ice", amount: "Fill with 1 inch space" }]
     },
     steps: ["Add the syrup, espresso, and milk to the cup then stir well", "Scoop in ice leaving space at the top", "Top with ChantillyCustard."],
   },
