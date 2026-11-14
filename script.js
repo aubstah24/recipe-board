@@ -976,7 +976,7 @@ const recipes = [
     description: "A simple batch of matcha for multiple drinks.",
     prepTime: "5–10 min", method: "Batch",
     sizes: {
-      "Batch": [{ name: "Matcha Powder", amount: "60g" }, { name: "RO Water", amount: "890mL" }],
+      "Batch": [{ name: "Matcha Powder", amount: "60g" }, { name: "RO Water", amount: "900mL" }],
     },
     steps: ["Start heating RO water in the temp control kettle", "Grab the bigger all white bowl and fill with ice to 3/4 of the way up and fill with faucet water to make an ice bath", "Sift the matcha powder into white bowl with black handle", "Once water is heated, pour in 350mL of hot water", "Whisk with the chasen until all bumps are gone (it should look like a thick paste)", "Grab a clean milk pitcher and rinse it", "Pour RO faucet water into it and pour water over the matcha paste until the total mL make 890mL", "Pour matcha into the squeeze bottle then place sideways into the ice bath bowl"],
     note: ["Do not leave chasen upside down, soaking in water, or leave it unrinsed for a long time.  Place chasen back on the stand and let it dry."],
