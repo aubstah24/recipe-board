@@ -539,6 +539,52 @@ const recipes = [
 
   },
 
+// BANANA MILK LATTE
+  {
+    id: "banana-latte", name: "Banana Milk Latte", category: "Espresso Lattes", icon: "☕",
+    description: "Espresso and banana with milk.", temperatures: ["Hot", "Iced"],
+    prepTime: "2–3 min", method: "Espresso / hot or iced",
+   sizes: {
+      "12oz": {
+        Hot: [
+          { name: "Condensed Mixture (Mix)", amount: "10mL" },
+          { name: "Banana Syrup", amount: "1 floz" },
+          { name: "Espresso", amount: "2 shots" },
+          { name: "Whole milk", amount: "9oz" }
+        ],
+        Iced: [
+          { name: "Condensed Mixture (Mix)", amount: "10mL" }, { name: "Espresso", amount: "2 shots" }, { name: "Banana Syrup", amount: "1 floz" }, { name: "Milk", amount: "100mL"},  {name: "Ice", amount: "Fill with ice"}
+      ]
+    },
+      "16oz": {
+        Hot: [
+          { name: "Condensed Mixture (Mix)", amount: "15mL" },
+          { name: "Banana Syrup", amount: "1.5 floz" },
+          { name: "Espresso", amount: "2 shots" },
+          { name: "Whole milk", amount: "10oz" }
+        ],
+        Iced:[
+          { name: "Condensed Mixture (Mix)", amount: "15mL" }, { name: "Espresso", amount: "2 shots" }, { name: "Banana Syrup", amount: "1.5 floz" }, { name: "Milk", amount: "150mL" },  {name: "Ice", amount: "Fill with ice"}
+        ]
+      },
+      "20oz": {
+        Iced: [
+          { name: "Condensed Mixture (Mix)", amount: "20mL" }, { name: "Espresso", amount: "4 shots" }, { name: "Banana Syrup", amount: "2 floz" }, { name: "Milk", amount: "180mL (200mL for drinks with a topping)"}, {name: "Ice", amount: "Fill with ice"}
+        ]
+      }
+    },
+    preparation: {
+      Hot: [
+        "Squeeze condensed mixture into the cup", "Pull espresso shots and empty over the syrup into the cup", "Stir until incorporated", "Steam milk, wipe the steam wand well, and purge wand", "Circle the milk pitcher then pour into the cup leaving 1/4 inch space from the top"
+      ],
+      Iced: [
+        "Squeeze condensed mixture into the cup", "Pull espresso shots and empty over the syrup", "Stir until incorporated", "Pour in the milk and stir again", "Fill with ice"
+      ]    
+    },
+    note: "For iced drinks, use the lower milk volume if the drink has a topping to avoid overflow."
+
+  },
+
 
   //  UBE LATTE
   {
