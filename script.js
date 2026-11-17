@@ -235,12 +235,12 @@ const recipes = [
 // SAGO MATCHA LATTE
   {
     id: "sago-matcha", name: "Sago Matcha Latte", category: "Matcha", icon: "🍵",
-    description: "Layered matcha latte with sago pearls and a cloud of your flavor choice.", Temperatures: ["Iced"],
+    description: "Layered matcha latte with sago pearls and a cloud of your flavor choice.", temperatures: ["Iced"],
     prepTime: "3 min", method: "Layered / iced",
     sizes: {
       "12oz": [],
       "16oz": [{ name: "Sago pearls", amount: "1 flat scoop" }, {name: "Sago Choice", amount: "1 pump syrup" }, { name: "Ice", amount: "As needed" }, { name: "Milk", amount: "100mL" }, { name: "Batch Matcha", amount: "50mL" }, {name: "Cloud Topping", amount: "2-3oz"}],
-      "20oz": [{ name: "Sago pearls", amount: "1.5 flat scoops" }, {name: "Sago Choice", amount: "1 pump syrup" }, { name: "Ice", amount: "As needed" }, { name: "Milk", amount: "12 oz" }, { name: "Batch Matcha", amount: "70mL" }, {name: "Cloud Topping", amount: "2-3oz"}]
+      "20oz": [{ name: "Sago pearls", amount: "1.5 flat scoops" }, {name: "Sago Choice", amount: "1 pump syrup" }, { name: "Ice", amount: "As needed" }, { name: "Milk", amount: "130mL" }, { name: "Batch Matcha", amount: "70mL" }, {name: "Cloud Topping", amount: "2-3oz"}]
     },
     steps: ["Add sago pearls to the cup with 1 pump of flavor chosen and mix with the spoon to combine and gently separate the sago so it doesn't stick together.", "Fill the cup with ice.", "Pour in milk.", "Slowly top with prepared matcha to create layers."],
     note: "For the sago matcha, you will add 10/15mL of puree over the ice.  Iced goes first to keep the sago pearls from sinking.  You want to gently stir the sago pearls with the syrup to coat them."
@@ -643,10 +643,10 @@ const recipes = [
           { name: "Honey Syrup", amount: "1 pump" }, {name: "Black Sugar Syrup", amount: "15mL" }, { name: "Condensed Mixture (Mix)", amount: "15mL" }, { name: "Cold Brew", amount: "170mL" }, { name: "Milk", amount: "40mL"},  {name: "Ice", amount: "Fill with ice"}
       ],
       "16oz": [
-          { name: "Honey Syrup", amount: "2 pumps" }, { name: "Black Sugar Syrup", amount: "20mL" }, { name: "Condensed Mixture (Mix)", amount: "60mL" }, { name: "Cold Brew", amount: "200mL" }, { name: "Milk", amount: "60mL" },  {name: "Ice", amount: "Fill with ice"}
+          { name: "Honey Syrup", amount: "2 pumps" }, { name: "Black Sugar Syrup", amount: "20mL" }, { name: "Condensed Mixture (Mix)", amount: "20mL" }, { name: "Cold Brew", amount: "200mL" }, { name: "Milk", amount: "60mL" },  {name: "Ice", amount: "Fill with ice"}
         ],
       "20oz": [ 
-          { name: "Honey Syrup", amount: "3 pumps" }, { name: "Black Sugar Syrup", amount: "25mL" }, { name: "Condensed Mixture (Mix)", amount: "90mL" }, { name: "Cold Brew", amount: "250mL" }, { name: "Milk", amount: "80mL"}, {name: "Ice", amount: "Fill with ice"}
+          { name: "Honey Syrup", amount: "3 pumps" }, { name: "Black Sugar Syrup", amount: "25mL" }, { name: "Condensed Mixture (Mix)", amount: "30mL" }, { name: "Cold Brew", amount: "250mL" }, { name: "Milk", amount: "80mL"}, {name: "Ice", amount: "Fill with ice"}
         ]
     },
    steps: ["Combine all the ingredients in the cup and stir well", "Fill with ice and serve."],
@@ -660,9 +660,9 @@ const recipes = [
     description: "White mocha latte topped with chocolate custard.", temperatures: ["Iced"],
     prepTime: "1-2 min", method: "Layered / iced",
     sizes: {
-      "12oz": [{name: "Hollander White Chocolate", amount: "1 pump"}, { name: "Espresso", amount: "2 shots" }, { name: "Milk", amount: "120mL" }, { name: "Chocolate Custard", amount: "2 floz" },{name: "Chocolate & Brown Droppers", amount: "1 Full dropper (0.75mL)" }, { name: "Ice", amount: "Fill with 1 inch space" }],
-      "16oz": [{name: "Hollander White Chocolate", amount: "1 pump"}, { name: "Espresso", amount: "2 shots" }, { name: "Milk", amount: "150mL" }, { name: "Chocolate Custard", amount: "2.5 floz" },{name: "Chocolate & Brown Droppers", amount: "1 Full dropper (0.75mL)" }, { name: "Ice", amount: "Fill with 1 inch space" }],
-      "20oz": [{name: "Hollander White Chocolate", amount: "2 pumps"}, { name: "Espresso", amount: "4 shots" }, { name: "Milk", amount: "200mL" }, { name: "Chocolate Custard", amount: "3.2 floz" },{name: "Chocolate & Brown Droppers", amount: "1 Full dropper (0.75mL)" }, { name: "Ice", amount: "Fill with 1 inch space" }]
+      "12oz": [{name: "Hollander White Chocolate", amount: "1 pump"}, { name: "Espresso", amount: "2 shots" }, { name: "Milk", amount: "120mL" }, { name: "Chocolate Custard Topping", amount: "see paper instructions on Top Fridge" }, { name: "Ice", amount: "Fill with 1 inch space" }],
+      "16oz": [{name: "Hollander White Chocolate", amount: "1 pump"}, { name: "Espresso", amount: "2 shots" }, { name: "Milk", amount: "150mL" }, { name: "Chocolate Custard Topping", amount: "see paper instructions on Top Fridge" }, { name: "Ice", amount: "Fill with 1 inch space" }],
+      "20oz": [{name: "Hollander White Chocolate", amount: "2 pumps"}, { name: "Espresso", amount: "4 shots" }, { name: "Milk", amount: "200mL" }, { name: "Chocolate Custard Topping", amount: "see paper instructions on Top Fridge" }, { name: "Ice", amount: "Fill with 1 inch space" }]
 
     },
     steps: ["Add the syrup and espresso into the cup then stir well", "Pour in the mix and mix again", "Scoop in ice leaving space at the top", "Top with Chocolate custard."],
@@ -676,9 +676,9 @@ const recipes = [
     description: "A latte topped with a kinako custard.", temperatures: ["Iced"],
     prepTime: "1-2 min", method: "Layered / iced",
     sizes: {
-      "12oz": [{name: "Black Sugar Syrup", amount: "15mL"}, { name: "Espresso", amount: "2 shots" }, { name: "Milk", amount: "120mL" }, { name: "Ice", amount: "Fill with 1 inch space" }, { name: "Kinako Custard", amount: "2 floz" }, {name: "Kinako Powder", amount: "2 scoops" }, {name: "Brown Sugar Syrup", amount: "1 pump"}],
-      "16oz": [{name: "Black Sugar Syrup", amount: "20mL"},{ name: "Espresso", amount: "2 shots" }, { name: "Milk", amount: "150mL" }, { name: "Ice", amount: "Fill with 1 inch space" }, { name: "Kinako Custard", amount: "2.7 floz" }, {name: "Kinako Powder", amount: "2 scoops" }, {name: "Brown Sugar Syrup", amount: "1 pump"}],
-      "20oz": [{name: "Black Sugar Syrup", amount: "25mL"},{ name: "Espresso", amount: "4 shots" }, { name: "Milk", amount: "200mL" }, { name: "Ice", amount: "Fill with 1 inch space" }, { name: "Kinako Custard", amount: "3.2 floz" }, {name: "Kinako Powder", amount: "2 scoops" }, {name: "Brown Sugar Syrup", amount: "2 pumps"}]
+      "12oz": [{name: "Black Sugar Syrup", amount: "15mL"}, { name: "Espresso", amount: "2 shots" }, { name: "Milk", amount: "120mL" }, { name: "Ice", amount: "Fill with 1 inch space" }, { name: "Kinako Custard Topping", amount: "see paper instructions on Top Fridge" } ],
+      "16oz": [{name: "Black Sugar Syrup", amount: "20mL"},{ name: "Espresso", amount: "2 shots" }, { name: "Milk", amount: "150mL" }, { name: "Ice", amount: "Fill with 1 inch space" }, { name: "Kinako Custard Topping", amount: "see paper instructions on Top Fridge" } ],
+      "20oz": [{name: "Black Sugar Syrup", amount: "25mL"},{ name: "Espresso", amount: "4 shots" }, { name: "Milk", amount: "200mL" }, { name: "Ice", amount: "Fill with 1 inch space" }, { name: "Kinako Custard Topping", amount: "see paper instructions on Top Fridge" }]
     },
     steps: ["Add the syrup, espresso, then milk to the cup then stir well", "Scoop in ice leaving space at the top", "Top with Kinako Custard."],
     note: "For Less sweet or No added sweetener, Lessen the syrup amount."
@@ -731,9 +731,9 @@ const recipes = [
     description: "Espresso latte topped with a salted caramel custard", temperatures: ["Iced"],
     prepTime: "2-3 min", method: "Layered / iced",
     sizes: {
-      "12oz": [{ name: "Espresso", amount: "2 shots" }, { name: "Milk", amount: "120mL" }, { name: "Custard", amount: "1.7 floz" }, {name: "Torani Caramel Sauce", amount: "20mL (0.7 floz)"}, { name: "Ice", amount: "Fill with 1 inch space" }],
-      "16oz": [{ name: "Espresso", amount: "2 shots" }, { name: "Milk", amount: "150mL" }, { name: "Custard", amount: "2 floz" }, {name: "Torani Caramel Sauce", amount: "30mL (1.0 floz)"},{ name: "Ice", amount: "Fill with 1 inch space" }],
-      "20oz": [{ name: "Espresso", amount: "4 shots" }, { name: "Milk", amount: "200mL" }, { name: "Custard", amount: "3 floz" }, {name: "Torani Caramel Sauce", amount: "40mL (1.3 floz)"},{ name: "Ice", amount: "Fill with 1 inch space" }]
+      "12oz": [{ name: "Espresso", amount: "2 shots" }, { name: "Milk", amount: "120mL" }, { name: "Caramel Custard Topping", amount: "see paper instructions on Top Fridge" }, { name: "Ice", amount: "Fill with 1 inch space" }],
+      "16oz": [{ name: "Espresso", amount: "2 shots" }, { name: "Milk", amount: "150mL" }, { name: "Caramel Custard Topping", amount: "see paper instructions on Top Fridge" }, { name: "Ice", amount: "Fill with 1 inch space" }],
+      "20oz": [{ name: "Espresso", amount: "4 shots" }, { name: "Milk", amount: "200mL" }, { name: "Caramel Custard Topping", amount: "see paper instructions on Top Fridge" }, { name: "Ice", amount: "Fill with 1 inch space" }]
     },
     steps: ["Add the syrup, espresso, and milk to the cup then stir well", "Scoop in ice leaving space at the top", "Top with Custard."],
   },
@@ -745,9 +745,9 @@ const recipes = [
     description: "Espresso latte topped with a salted maple custard", temperatures: ["Iced"],
     prepTime: "2-3 min", method: "Layered / iced",
     sizes: {
-      "12oz": [{ name: "Espresso", amount: "2 shots" }, { name: "Milk", amount: "120mL" }, { name: "Custard", amount: "1.7 floz" }, {name: "Maple Syrup", amount: "20mL (0.7 floz)"}, { name: "Ice", amount: "Fill with 1 inch space" }],
-      "16oz": [{ name: "Espresso", amount: "2 shots" }, { name: "Milk", amount: "150mL" }, { name: "Custard", amount: "2 floz" }, {name: "Maple Syrup", amount: "30mL (1.0 floz)"},{ name: "Ice", amount: "Fill with 1 inch space" }],
-      "20oz": [{ name: "Espresso", amount: "4 shots" }, { name: "Milk", amount: "200mL" }, { name: "Custard", amount: "3 floz" }, {name: "Maple Syrup", amount: "40mL (1.3 floz)"},{ name: "Ice", amount: "Fill with 1 inch space" }]
+      "12oz": [{ name: "Espresso", amount: "2 shots" }, { name: "Milk", amount: "120mL" }, { name: "Maple Custard Topping", amount: "see paper instructions on Top Fridge" }, { name: "Ice", amount: "Fill with 1 inch space" }],
+      "16oz": [{ name: "Espresso", amount: "2 shots" }, { name: "Milk", amount: "150mL" }, { name: "Maple Custard Topping", amount: "see paper instructions on Top Fridge" }, { name: "Ice", amount: "Fill with 1 inch space" }],
+      "20oz": [{ name: "Espresso", amount: "4 shots" }, { name: "Milk", amount: "200mL" }, { name: "Maple Custard Topping", amount: "see paper instructions on Top Fridge" }, { name: "Ice", amount: "Fill with 1 inch space" }]
     },
     steps: ["Add the syrup, espresso, and milk to the cup then stir well", "Scoop in ice leaving space at the top", "Top with Custard."],
   },
@@ -1106,6 +1106,16 @@ const recipes = [
     steps: ["Put ingredients together in a pan over Simmer function", "Stir continuously until sugar is completely dissolved", "Take off hot plate and let it cool down", "Grab a black lid squeeze bottle and 32oz mason jar", "Fill mason jar with syrup then cap it", "Then fill squeeze bottle with remainder using a funnel", "Place dissolvable label on squeeze bottle & mason jar, then date mark, no EXP date needed", "Store both mason jar and squeeze bottle in the fridge"],
   },
 
+  // EARL GREY SYRUP
+  {
+    id: "earl-grey-syrup", name: "Earl Grey Syrup", category: "Batch Recipes", icon: "",
+    description: "Earl Grey syrup for various drinks.",
+    prepTime: "5 mins", method: "Batch",
+    sizes: {
+      "Batch": [{ name: "Earl Grey Loose Leaf Tea", amount: "2 Heaping Scoops" }, { name: "Hot RO Water (195ºF)", amount: "4 cups" }, {name: "Sugar", amount: "1 cup"}],
+    },
+    steps: ["Steep the Earl Grey tea with 195ºF hot water in the measuring cup for 10 minutes", "Use the small strainer and pour out tea into the pan on the hot plate", "Add in the 1 cup of sugar and mix until dissolved on the Simmer Function", "Grab a 64oz Glass Mason pitcher and rinse it", "Pour syrup into the mason pitcher and let it cool down", "Place dissolvable label on mason pitcher, then date mark, no EXP date needed", "Store on the bottom shelf of the single door fridge behind current earl grey pitcher"],
+  },
 
   // NANA SYRUP
   {
@@ -1124,8 +1134,8 @@ const recipes = [
     description: "Batch tea for various drinks.",
     prepTime: "5 mins", method: "Batch",
     sizes: {
-      "Green Tea": [{ name: "Green Tea Bags", amount: "8 bags" }, { name: "185º RO Water", amount: "4 cups" }, {name: "Steep Time", amount: "7 minutes"}, { name: "Storage Jar", amount: "1 Gallon Glass Jar" }],
-      "Black Tea": [{ name: "Black Tea Bags", amount: "8 bags" }, { name: "195º RO Water", amount: "4 cups" }, {name: "Steep Time", amount: "5 minutes"}, { name: "Storage Jar", amount: "64 oz Mason Pitcher" }],
+      "Green Tea": [{ name: "Green Tea Bags", amount: "8 bags" }, { name: "Hot RO Water (185ºF)", amount: "4 cups" }, {name: "Steep Time", amount: "7 minutes"}, { name: "Storage Jar", amount: "1 Gallon Glass Jar" }],
+      "Black Tea": [{ name: "Black Tea Bags", amount: "8 bags" }, { name: "Hot RO Water (195ºF)", amount: "4 cups" }, {name: "Steep Time", amount: "5 minutes"}, { name: "Storage Jar", amount: "64 oz Mason Pitcher" }],
     },
     steps: ["Star heating RO water in the kettle", "Use 4 cups measuring cup and place the 8 bags inside", "While holding onto the bag strings, pour in the water to 4 cups", "Green Tea: Steep for 7 minutes / Black Tea: Steep for 5 minutes", "Pour into jar", "Fill measuring cup with the bags in it still with regular RO water from faucet and pour into jar", "Place dissolvable label on jar, then date mark, no EXP date needed", "Wait until completely cool then store in the fridge on the right of double door fridge"],
   },
@@ -1177,34 +1187,56 @@ function renderCategoryNav() {
 
 function getVisibleRecipes() {
   return recipes.filter(recipe => {
-    const matchesCategory = activeCategory === "All" || recipe.category === activeCategory;
-    const matchesSearch = `${recipe.name} ${recipe.category}`.toLowerCase().includes(searchTerm);
+    const matchesCategory =
+      activeCategory.toLowerCase() === "all" ||
+      recipe.category.toLowerCase() === activeCategory.toLowerCase();
+
+    const matchesSearch =
+      `${recipe.name} ${recipe.category}`.toLowerCase().includes(searchTerm.toLowerCase());
+
     return matchesCategory && matchesSearch;
   });
 }
 
+
 function renderRecipeSections() {
   const visibleRecipes = getVisibleRecipes();
+
   if (!visibleRecipes.length) {
     recipeSections.innerHTML = '<p class="no-results">No drinks found. Try another search.</p>';
     return;
   }
 
-  const sectionCategories = activeCategory === "All" ? [activeCategory] : categories.slice(1).filter(cat => visibleRecipes.some(recipe => recipe.category === cat));
+  // Show every category when ALL is selected.
+  const sectionCategories = activeCategory.toLowerCase() === "all"
+    ? [...new Set(visibleRecipes.map(recipe => recipe.category))]
+    : [activeCategory];
+
   recipeSections.innerHTML = sectionCategories.map(category => {
     const group = visibleRecipes.filter(recipe => recipe.category === category);
+
     if (!group.length) return "";
+
     return `
       <section class="category-section">
         <div class="section-title">
-          <h3>${category}</h3><span class="section-count">${group.length} ${group.length === 1 ? "drink" : "drinks"}</span>
+          <h3>${category}</h3>
+          <span class="section-count">
+            ${group.length} ${group.length === 1 ? "drink" : "drinks"}
+          </span>
         </div>
+
         <div class="bubble-grid">
           ${group.map(recipe => `
             <button class="recipe-bubble ${activeRecipeId === recipe.id ? "selected" : ""}"
-              type="button" data-recipe="${recipe.id}" aria-pressed="${activeRecipeId === recipe.id}">
+              type="button"
+              data-recipe="${recipe.id}"
+              aria-pressed="${activeRecipeId === recipe.id}">
               <span class="bubble-icon">${recipe.icon || "✳"}</span>
-              <span><span class="bubble-name">${recipe.name}</span><span class="bubble-category">${recipe.category}</span></span>
+              <span>
+                <span class="bubble-name">${recipe.name}</span>
+                <span class="bubble-category">${recipe.category}</span>
+              </span>
             </button>
           `).join("")}
         </div>
@@ -1214,16 +1246,29 @@ function renderRecipeSections() {
   recipeSections.querySelectorAll("[data-recipe]").forEach(button => {
     button.addEventListener("click", () => {
       activeRecipeId = button.dataset.recipe;
-      activeSize = "16oz";
+
       const selectedRecipe = recipes.find(item => item.id === activeRecipeId);
-      activeTemperature = selectedRecipe?.temperatures?.includes("Iced") ? "Iced" : (selectedRecipe?.temperatures?.[0] || "Iced");
+
+      activeSize = selectedRecipe?.category === "Batch Recipes"
+        ? Object.keys(selectedRecipe.sizes)[0]
+        : "16oz";
+
+      activeTemperature = selectedRecipe?.temperatures?.includes("Iced")
+        ? "Iced"
+        : (selectedRecipe?.temperatures?.[0] || "Iced");
+
       selectedModifiers = {};
-      Object.entries(selectedRecipe?.modifiers || {}).forEach(([key, options]) => { selectedModifiers[key] = options[0]; });
+
+      Object.entries(selectedRecipe?.modifiers || {}).forEach(([key, options]) => {
+        selectedModifiers[key] = options[0];
+      });
+
       renderRecipeSections();
       renderRecipePanel();
     });
   });
 }
+
 
 function renderRecipePanel() {
   const recipe = recipes.find(item => item.id === activeRecipeId);
