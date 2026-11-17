@@ -75,19 +75,19 @@ const recipes = [
         Hot: [
           {name: "Simple Syrup", amount: "2 pumps"}, { name: "Matcha Powder", amount: "4g" }, {name: "Hot Kettle Water", amount: "50mL"}, { name: "Milk", amount: "9oz" }
         ],
-       "Iced": [{ name: "Batch Matcha", amount: "50mL" }, { name: "Milk", amount: "120mL" },{ name: "Ice", amount: "As needed" }]
+       "Iced": [{name: "Simple Syrup", amount: "2 pumps"}, { name: "Batch Matcha", amount: "50mL" }, { name: "Milk", amount: "120mL" },{ name: "Ice", amount: "As needed" }]
     },
       "16oz": {
         Hot: [
          {name: "Simple Syrup", amount: "2 pumps"}, { name: "Matcha Powder", amount: "6g" }, {name: "Hot Kettle Water", amount: "70mL"}, { name: "Milk", amount: "10oz" }
         ],
         Iced:[
-          { name: "Batch Matcha", amount: "70mL" }, { name: "Milk", amount: "170mL" }, { name: "Ice", amount: "As needed" }
+          {name: "Simple Syrup", amount: "2 pumps"},{ name: "Batch Matcha", amount: "70mL" }, { name: "Milk", amount: "170mL" }, { name: "Ice", amount: "As needed" }
         ]
       },
       "20oz": {
         Iced: [
-          { name: "Batch Matcha", amount: "90mL" }, { name: "Milk", amount: "200mL" }, { name: "Ice", amount: "As needed" }
+          {name: "Simple Syrup", amount: "2 pumps"},{ name: "Batch Matcha", amount: "90mL" }, { name: "Milk", amount: "200mL" }, { name: "Ice", amount: "As needed" }
         ]
       }
     },
