@@ -111,21 +111,21 @@ const recipes = [
     sizes: {
       "12oz": {
         Hot: [
-          {name: "Simple Syrup", amount: "2 pumps"}, { name: "Hojicha Powder", amount: "3g" }, {name: "Hot Kettle Water", amount: "50mL"}, { name: "Milk", amount: "9oz" }
+          {name: "Simple Syrup", amount: "2 pumps"}, { name: "Hojicha Powder", amount: "3g" }, {name: "Hot Kettle Water (175ºF)", amount: "50mL"}, { name: "Milk", amount: "9oz" }
         ],
-       "Iced": [{name: "Simple Syrup", amount: "1 pump"}, { name: "Hojicha Powder", amount: "3g" }, {name: "Hot Kettle Water", amount: "50mL"}, { name: "Milk", amount: "120mL" },{ name: "Ice", amount: "As needed" }]
+       "Iced": [{name: "Simple Syrup", amount: "1 pump"}, { name: "Hojicha Powder", amount: "3g" }, {name: "Hot Kettle Water (175ºF)", amount: "50mL"}, { name: "Milk", amount: "120mL" },{ name: "Ice", amount: "As needed" }]
     },
       "16oz": {
         Hot: [
-        { name: "Hojicha Powder", amount: "4g" }, {name: "Hot Kettle Water", amount: "70mL"}, {name: "Simple Syrup", amount: "2 pumps"}, { name: "Milk", amount: "10oz" }
+        { name: "Hojicha Powder", amount: "4g" }, {name: "Hot Kettle Water (175ºF)", amount: "70mL"}, {name: "Simple Syrup", amount: "2 pumps"}, { name: "Milk", amount: "10oz" }
         ],
         Iced:[
-          {name: "Simple Syrup", amount: "2 pumps"}, { name: "Hojicha Powder", amount: "4g" }, {name: "Hot Kettle Water", amount: "70mL"}, { name: "Milk", amount: "170mL" }, { name: "Ice", amount: "As needed" }
+          {name: "Simple Syrup", amount: "2 pumps"}, { name: "Hojicha Powder", amount: "4g" }, {name: "Hot Kettle Water (175ºF)", amount: "70mL"}, { name: "Milk", amount: "170mL" }, { name: "Ice", amount: "As needed" }
         ]
       },
       "20oz": {
         Iced: [
-          { name: "Hojicha Powder", amount: "6g" }, {name: "Simple Syrup", amount: "2 pumps"}, {name: "Hot Kettle Water", amount: "90mL"}, { name: "Milk", amount: "200mL" }, { name: "Ice", amount: "As needed" }
+          {name: "Simple Syrup", amount: "2 pumps"}, { name: "Hojicha Powder", amount: "6g" }, {name: "Hot Kettle Water (175ºF)", amount: "90mL"}, { name: "Milk", amount: "200mL" }, { name: "Ice", amount: "As needed" }
         ]
       }
     },
@@ -149,13 +149,13 @@ const recipes = [
     sizes: {
       "12oz": {
         Hot: [
-          {name: "Simple Syrup", amount: "2 pumps"}, { name: "Espresso", amount: "2 shots" }, { name: "Matcha Powder", amount: "3g" }, {name: "Hot Kettle Water", amount: "40mL"}, { name: "Milk", amount: "9oz" }
+          {name: "Simple Syrup", amount: "2 pumps"}, { name: "Espresso", amount: "2 shots" }, { name: "Matcha Powder", amount: "3g" }, {name: "Hot Kettle Water (165ºF)", amount: "40mL"}, { name: "Milk", amount: "9oz" }
         ],
        "Iced": [{name: "Simple Syrup", amount: "2 pumps"}, { name: "Espresso", amount: "2 shots" }, { name: "Milk", amount: "130mL" },{ name: "Ice", amount: "As needed" }, { name: "Batch Matcha", amount: "40mL" }]
     },
       "16oz": {
         Hot: [
-         {name: "Simple Syrup", amount: "2 pumps"}, { name: "Espresso", amount: "2 shots" }, { name: "Matcha Powder", amount: "6g" }, {name: "Hot Kettle Water", amount: "70mL"}, { name: "Milk", amount: "10oz" }
+         {name: "Simple Syrup", amount: "2 pumps"}, { name: "Espresso", amount: "2 shots" }, { name: "Matcha Powder", amount: "6g" }, {name: "Hot Kettle Water (165ºF)", amount: "70mL"}, { name: "Milk", amount: "10oz" }
         ],
         Iced:[
           {name: "Simple Syrup", amount: "2 pumps"}, { name: "Espresso", amount: "2 shots" }, { name: "Milk", amount: "170mL" }, { name: "Ice", amount: "As needed" }, { name: "Batch Matcha", amount: "60mL" }
@@ -211,7 +211,7 @@ const recipes = [
          {name: "Cond Mix", amount: "20mL"}, {name: "Simple Syrup", amount: "1 pump"}, { name: "Matcha Powder", amount: "6g" }, {name: "Hot Kettle Water", amount: "70mL"}, {name: "Ube", amount: "1 Full Dropper"},{ name: "Milk", amount: "10oz" }
         ],
         Iced:[
-          {name: "Cond Mix", amount: "20mL"}, { name: "Milk", amount: "170mL" }, { name: "Ice", amount: "As needed" }, {name: "Ube", amount: "1 Full Dropper"}, { name: "Batch Matcha", amount: "70mL" }
+          {name: "Cond Mix", amount: "20mL"}, { name: "Milk", amount: "170mL" }, {name: "Ube", amount: "1 Full Dropper"},{ name: "Ice", amount: "As needed" }, { name: "Batch Matcha", amount: "70mL" }
         ]
       },
       "20oz": {
@@ -234,13 +234,13 @@ const recipes = [
 
 // SAGO MATCHA LATTE
   {
-    id: "sago-matcha", name: "Sago Matcha Latte", category: "Matcha", icon: "🍓",
-    description: "Layered matcha latte with sago pearls and a cloud of your flavor choice.",
+    id: "sago-matcha", name: "Sago Matcha Latte", category: "Matcha", icon: "🍵",
+    description: "Layered matcha latte with sago pearls and a cloud of your flavor choice.", Temperatures: ["Iced"],
     prepTime: "3 min", method: "Layered / iced",
     sizes: {
       "12oz": [],
-      "16oz": [{ name: "Sago pearls", amount: "1 flat ice cream scoop" }, {name: "Sago Choice", amount: "1 pump syrup" }, { name: "Ice", amount: "As needed" }, { name: "Milk", amount: "100mL" }, { name: "Batch Matcha", amount: "50mL" }, {name: "Cloud Topping", amount: "2-3oz"}],
-      "20oz": [{ name: "Sago pearls", amount: "1.5 flat ice cream scoops" }, { name: "Milk", amount: "12 oz" }, { name: "Matcha mixture", amount: "3.5 oz" }, { name: "Ice", amount: "As needed" }]
+      "16oz": [{ name: "Sago pearls", amount: "1 flat scoop" }, {name: "Sago Choice", amount: "1 pump syrup" }, { name: "Ice", amount: "As needed" }, { name: "Milk", amount: "100mL" }, { name: "Batch Matcha", amount: "50mL" }, {name: "Cloud Topping", amount: "2-3oz"}],
+      "20oz": [{ name: "Sago pearls", amount: "1.5 flat scoops" }, {name: "Sago Choice", amount: "1 pump syrup" }, { name: "Ice", amount: "As needed" }, { name: "Milk", amount: "12 oz" }, { name: "Batch Matcha", amount: "70mL" }, {name: "Cloud Topping", amount: "2-3oz"}]
     },
     steps: ["Add sago pearls to the cup with 1 pump of flavor chosen and mix with the spoon to combine and gently separate the sago so it doesn't stick together.", "Fill the cup with ice.", "Pour in milk.", "Slowly top with prepared matcha to create layers."],
     note: "For the sago matcha, you will add 10/15mL of puree over the ice.  Iced goes first to keep the sago pearls from sinking.  You want to gently stir the sago pearls with the syrup to coat them."
