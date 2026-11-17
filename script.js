@@ -554,7 +554,7 @@ const recipes = [
         ],
         Iced: [
           { name: "Condensed Mixture (Mix)", amount: "10mL" }, { name: "Espresso", amount: "2 shots" }, { name: "Banana Syrup", amount: "1 floz" }, { name: "Milk", amount: "100mL"},  {name: "Ice", amount: "Fill with ice"}
-      ]
+        ]
     },
       "16oz": {
         Hot: [
@@ -601,7 +601,7 @@ const recipes = [
         ],
         Iced: [
           { name: "Cond Mix", amount: "20mL" }, { name: "Ube", amount: "Full Dropper" }, { name: "Espresso", amount: "2 shots" }, { name: "Milk", amount: "120mL"},  {name: "Ice", amount: "Fill with ice"}
-      ]
+        ]
     },
       "16oz": {
         Hot: [
@@ -654,6 +654,35 @@ const recipes = [
 
 /* CUSTARD LATTE DRINKS */
 
+   /* HAPA LATTE */
+  {
+    id: "hapa-latte", name: "Hapa Latte", category: "Custard Lattes", icon: "🍫",
+    description: "White mocha latte topped with chocolate custard.", temperatures: ["Iced"],
+    prepTime: "1-2 min", method: "Layered / iced",
+    sizes: {
+      "12oz": [{name: "Hollander White Chocolate", amount: "1 pump"}, { name: "Espresso", amount: "2 shots" }, { name: "Milk", amount: "120mL" }, { name: "Chocolate Custard", amount: "2 floz" },{name: "Chocolate & Brown Droppers", amount: "1 Full dropper (0.75mL)" }, { name: "Ice", amount: "Fill with 1 inch space" }],
+      "16oz": [{name: "Hollander White Chocolate", amount: "1 pump"}, { name: "Espresso", amount: "2 shots" }, { name: "Milk", amount: "150mL" }, { name: "Chocolate Custard", amount: "2.5 floz" },{name: "Chocolate & Brown Droppers", amount: "1 Full dropper (0.75mL)" }, { name: "Ice", amount: "Fill with 1 inch space" }],
+      "20oz": [{name: "Hollander White Chocolate", amount: "2 pumps"}, { name: "Espresso", amount: "4 shots" }, { name: "Milk", amount: "200mL" }, { name: "Chocolate Custard", amount: "3.2 floz" },{name: "Chocolate & Brown Droppers", amount: "1 Full dropper (0.75mL)" }, { name: "Ice", amount: "Fill with 1 inch space" }]
+
+    },
+    steps: ["Add the syrup and espresso into the cup then stir well", "Pour in the mix and mix again", "Scoop in ice leaving space at the top", "Top with Chocolate custard."],
+    note: "For Less sweet or No added sweetener, put 1/2 pump less syrup."
+  },
+
+
+   /* KINAKO LATTE */
+  {
+    id: "kinako-latte", name: "Kinako Latte", category: "Custard Lattes", icon: "�",
+    description: "A latte topped with a kinako custard.", temperatures: ["Iced"],
+    prepTime: "1-2 min", method: "Layered / iced",
+    sizes: {
+      "12oz": [{name: "Black Sugar Syrup", amount: "15mL"}, { name: "Espresso", amount: "2 shots" }, { name: "Milk", amount: "120mL" }, { name: "Ice", amount: "Fill with 1 inch space" }, { name: "Kinako Custard", amount: "2 floz" }, {name: "Kinako Powder", amount: "2 scoops" }, {name: "Brown Sugar Syrup", amount: "1 pump"}],
+      "16oz": [{name: "Black Sugar Syrup", amount: "20mL"},{ name: "Espresso", amount: "2 shots" }, { name: "Milk", amount: "150mL" }, { name: "Ice", amount: "Fill with 1 inch space" }, { name: "Kinako Custard", amount: "2.7 floz" }, {name: "Kinako Powder", amount: "2 scoops" }, {name: "Brown Sugar Syrup", amount: "1 pump"}],
+      "20oz": [{name: "Black Sugar Syrup", amount: "25mL"},{ name: "Espresso", amount: "4 shots" }, { name: "Milk", amount: "200mL" }, { name: "Ice", amount: "Fill with 1 inch space" }, { name: "Kinako Custard", amount: "3.2 floz" }, {name: "Kinako Powder", amount: "2 scoops" }, {name: "Brown Sugar Syrup", amount: "2 pumps"}]
+    },
+    steps: ["Add the syrup, espresso, then milk to the cup then stir well", "Scoop in ice leaving space at the top", "Top with Kinako Custard."],
+    note: "For Less sweet or No added sweetener, Lessen the syrup amount."
+  },
 
   // BIG ISLAND VOG LATTE
   {
@@ -1119,8 +1148,8 @@ recipes.forEach(recipe => {
   }
 });
 
-const categories = ["Monthly Specials", "Matcha", "Espresso Lattes", "Custard Lattes", "Regular Coffee", "Teas/Lemonade", "Dirty Sodas", "Keiki", "Batch Recipes"];
-let activeCategory = "Monthly Specials";
+const categories = ["All", "Monthly Specials", "Matcha", "Espresso Lattes", "Custard Lattes", "Regular Coffee", "Teas/Lemonade", "Dirty Sodas", "Keiki", "Batch Recipes"];
+let activeCategory = "All";
 let activeRecipeId = null;
 let activeSize = "16oz";
 let activeTemperature = "Iced";
@@ -1148,7 +1177,7 @@ function renderCategoryNav() {
 
 function getVisibleRecipes() {
   return recipes.filter(recipe => {
-    const matchesCategory = activeCategory === "Monthly Specials" || recipe.category === activeCategory;
+    const matchesCategory = activeCategory === "All" || recipe.category === activeCategory;
     const matchesSearch = `${recipe.name} ${recipe.category}`.toLowerCase().includes(searchTerm);
     return matchesCategory && matchesSearch;
   });
@@ -1161,7 +1190,7 @@ function renderRecipeSections() {
     return;
   }
 
-  const sectionCategories = activeCategory === "Monthly Specials" ? [activeCategory] : categories.slice(1).filter(cat => visibleRecipes.some(recipe => recipe.category === cat));
+  const sectionCategories = activeCategory === "All" ? [activeCategory] : categories.slice(1).filter(cat => visibleRecipes.some(recipe => recipe.category === cat));
   recipeSections.innerHTML = sectionCategories.map(category => {
     const group = visibleRecipes.filter(recipe => recipe.category === category);
     if (!group.length) return "";
