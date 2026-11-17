@@ -1128,6 +1128,17 @@ const recipes = [
     steps: ["Put bananas, brown sugar, and water together in a pot over Simmer function", "Use masher to break down the bananas in the pan", "Bring banana syrup to a simmer over 1000 power on hot plate and stir in between minutes", "Heat for 5 minutes minimum until banana is slightly caramelized", "Add in the cinnamon and stir again", "Use red kitchen aid immersion blender to smooth out the banana syrup while its hot", "Rinse and pour syrup into a 64oz mason pitcher", "Place dissolvable label on squeeze bottle & mason jar, then date mark, no EXP date needed", "Wait until completely cool then store in the fridge"],
   },
 
+  // NANA CUSTARD
+  {
+    id: "nana-custard", name: "Nana Custard Topping", category: "Batch Recipes", icon: "🍌",
+    description: "Nana custard TOPPINGfor various drinks.",
+    prepTime: "3 mins", method: "Batch",
+    sizes: {
+      "Batch": [{ name: "Banana Syrup", amount: "1.5 cups" }, {name: "Custard Base", amount: "Fill to 4 cups"}],
+    },
+    steps: ["Pour in banana syrup into measuring cup", "Use laddle in left table drawer to scoop in custard and fill to the 4 cup mark", "Stir with a mini spatula to ensure it is all combined", "Pour mixture into the square squeeze bottle then cap it", "Place on the bottom left of the double door fridge"],
+  },
+
   // BATCH TEA
   {
     id: "batch-tea", name: "Batch Tea", category: "Batch Recipes", icon: "",
