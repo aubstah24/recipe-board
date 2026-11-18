@@ -988,7 +988,63 @@ const recipes = [
     note: "Skip creamer if label says 'No creamer' on it."
   },
 
+  // COOL BLUE Dirty Soda
+    {
+    id: "blue-dirty-soda", name: "COOL BLUE Dirty Soda", category: "Dirty Sodas", icon: "🥤",
+    description: "Large cup only with choice soda with flavors of their choice",
+    prepTime: "1–2 min", method: "Built / iced",
+    sizes: {
+      "12oz": [],
+      "16oz": [],
+      "20oz": [{ name: "Soda", amount: "Sprite" }, { name: "Blue Raspberry Syrup", amount: "3 pumps" }, { name: "Coconut Syrup", amount: "2 pumps" }, { name: "Ice", amount: "Halfway, then top off" }, { name: "Creamer", amount: "3 pumps" }]
+    },
+    steps: ["Pump syrup into 20oz cup", "Fill halfway with ice", "Slowly pour in soda", "Add in 3 pumps of creamer", "Gently stir and serve"],
+    note: "Skip creamer if label says 'No creamer' on it."
+  },
 
+
+  // TROPICAL DEW Dirty Soda
+    {
+    id: "tropical-dew-dirty-soda", name: "TROPICAL DEW Dirty Soda", category: "Dirty Sodas", icon: "🥤",
+    description: "Large cup only with choice soda with flavors of their choice",
+    prepTime: "1–2 min", method: "Built / iced",
+    sizes: {
+      "12oz": [],
+      "16oz": [],
+      "20oz": [{ name: "Soda", amount: "Mountain Dew" }, { name: "Strawberry Syrup", amount: "2 pumps" }, { name: "Guava Syrup", amount: "3 pumps" },{ name: "Ice", amount: "Halfway, then top off" }, { name: "Creamer", amount: "3 pumps" }]
+    },
+    steps: ["Pump syrup into 20oz cup", "Fill halfway with ice", "Slowly pour in soda", "Add in 3 pumps of creamer", "Gently stir and serve"],
+    note: "Skip creamer if label says 'No creamer' on it."
+  },
+
+  // CHERRY COLA Dirty Soda
+    {
+    id: "cherry-cola-dirty-soda", name: "CHERRY COLA Dirty Soda", category: "Dirty Sodas", icon: "🥤",
+    description: "Large cup only with choice soda with flavors of their choice",
+    prepTime: "1–2 min", method: "Built / iced",
+    sizes: {
+      "12oz": [],
+      "16oz": [],
+      "20oz": [{ name: "Soda", amount: "Coca Cola" }, { name: "Cherry Syrup", amount: "3 pumps" }, { name: "Coconut Syrup", amount: "2 pumps" },{ name: "Ice", amount: "Halfway, then top off" }, { name: "Creamer", amount: "3 pumps" }]
+    },
+    steps: ["Pump syrup into 20oz cup", "Fill halfway with ice", "Slowly pour in soda", "Add in 3 pumps of creamer", "Gently stir and serve"],
+    note: "Skip creamer if label says 'No creamer' on it."
+  },
+
+
+  // DR. CHILL Dirty Soda
+    {
+    id: "dr-chill-dirty-soda", name: "DR. CHILL Dirty Soda", category: "Dirty Sodas", icon: "🥤",
+    description: "Large cup only with choice soda with flavors of their choice",
+    prepTime: "1–2 min", method: "Built / iced",
+    sizes: {
+      "12oz": [],
+      "16oz": [],
+      "20oz": [{ name: "Soda", amount: "Dr. Pepper" }, { name: "Vanilla Syrup", amount: "2 pumps" }, { name: "Coconut Syrup", amount: "3 pumps" }, { name: "Ice", amount: "Halfway, then top off" }, { name: "Creamer", amount: "3 pumps" }]
+    },
+    steps: ["Pump syrup into 20oz cup", "Fill halfway with ice", "Slowly pour in soda", "Add in 3 pumps of creamer", "Gently stir and serve"],
+    note: "Skip creamer if label says 'No creamer' on it."
+  },
 
 /* KEIKI MENU */
 
